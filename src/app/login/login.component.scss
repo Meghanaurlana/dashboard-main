@@ -52,13 +52,11 @@
     
 }
 
-.p-radiobutton .p-radiobutton-box .p-radiobutton-icon{
-    width: .3125rem;
-    height: .3125rem;
-    
+:host ::ng-deep p-radioButton{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: .9375rem;
 }
-
-
 
 .p-field *{
     width: 350px;
