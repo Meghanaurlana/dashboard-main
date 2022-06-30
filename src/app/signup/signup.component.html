@@ -1,0 +1,79 @@
+<div class="body">
+    <div class="container">
+        <div class="title">Imaginnovate</div>
+        <div class="desc">Register your account</div>
+        <div class="content">
+            <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" action="#">
+                <div class="user-details">
+                    <div class="p-field input-box">
+                        <label for="firstName">First Name</label>
+                        <input id="firstName" type="text" formControlName="firstName" class="p-invalid"
+                            [ngClass]="{'border-danger': getFormControll('firstName').touched && getFormControll('firstName')}"
+                            placeholder="John" pInputText />
+                        <small class="p-invalid text-danger"
+                            *ngIf="getFormControll('firstName').touched && getFormControll('firstName').invalid">Username
+                            is not available.</small>
+                    </div>
+                    <div class="p-field input-box">
+                        <label for="lastName">Last Name</label>
+                        <input id="lastName" type="text" formControlName="lastName" class="p-invalid"
+                            placeholder="marshall" pInputText />
+                    </div>
+                    <div class="p-field input-box">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input id="phoneNumber" type="number" formControlName="phoneNumber" placeholder="9876543210"
+                            pInputText />
+                    </div>
+                    <div class="p-field input-box">
+                        <label for="emailAddress">Email Address</label>
+                        <input id="emailAddress" type="email" formControlName="emailAddress" class="p-invalid"
+                            [ngClass]="{'border-danger': getFormControll('emailAddress').touched && getFormControll('emailAddress').invalid}"
+                            placeholder="John.marshall@gmail.com" pInputText />
+                        <small class="p-invalid text-danger"
+                            *ngIf="getFormControll('emailAddress').touched && getFormControll('emailAddress').invalid">Vaild
+                            Email Address is
+                            required</small>
+                    </div>
+                    <div class="p-field input-box">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" autocomplete="on" formControlName="password"
+                            [ngClass]="{'border-danger': getFormControll('password').touched && getFormControll('password').invalid}"
+                            class="p-invalid" placeholder="**********" pInputText />
+                        <small class="p-invalid text-danger"
+                            *ngIf="getFormControll('password').touched && getFormControll('password').invalid">Password
+                            minimum 8 characters required</small>
+                    </div>
+                    <div class="p-field input-box">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input id="confirmPassword" type="password" autocomplete="on" formControlName="confirmPassword"
+                            [ngClass]="{'border-danger': getFormControll('confirmPassword').touched && getFormControll('confirmPassword').invalid}"
+                            class="p-invalid" placeholder="**********" pInputText />
+                        <small class="p-invalid text-danger"
+                            *ngIf="getFormControll('confirmPassword').touched && getFormControll('confirmPassword').invalid">Confirm
+                            Password is
+                            required</small>
+                        <small class="p-invalid text-danger"
+                            *ngIf="getFormControll('confirmPassword').touched && getFormControll('password').value != getFormControll('confirmPassword').value">Password
+                            mismatch</small>
+                    </div>
+                </div>
+                <div class="terms">
+                    <input type="radio" formControlName="radio" value="true">
+                    <label for="btn">I agree to Terms & Privacy Policy</label>
+                    <div>
+                        <small id="radio" class="p-invalid text-danger"
+                            *ngIf="getFormControll('radio').touched && getFormControll('radio').invalid">Please agree
+                            Terms & Privacy Policy</small>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <p-button type="submit" label="Create Account" styleClass="p-button"></p-button>
+                </div>
+                <div class="account">
+                    <p><a [routerLink]="'/login'"> Have an account? Join free Today</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
