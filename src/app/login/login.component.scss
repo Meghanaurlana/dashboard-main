@@ -57,13 +57,9 @@
     cursor: pointer;
     margin-right: .9375rem;
     width: .625rem;
+
 }
 
-:host ::ng-deep p-radioButton-box{
-width: .9375rem;
-height: .9375rem;
-size: 15px;
-}
 
 
 .p-field * {
