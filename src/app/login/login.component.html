@@ -9,9 +9,9 @@
                         <div class="p-field">
                             <label for="emailAddress">Email Address</label>
                             <input id="emailAddress" type="email" formControlName="emailAddress"
-                            [ngClass]="{'border-danger': getFormControll('emailAddress').touched && getFormControll('emailAddress').invalid}"  class="p-invalid"
-                                placeholder="John.marshall@gmail.com" pInputText />
-                            <small class="p-invalid text-danger " 
+                                [ngClass]="{'border-danger': getFormControll('emailAddress').touched && getFormControll('emailAddress').invalid}"
+                                class="p-invalid" placeholder="John.marshall@gmail.com" pInputText />
+                            <small class="p-invalid text-danger "
                                 *ngIf="getFormControll('emailAddress').touched && getFormControll('emailAddress').invalid">Valid
                                 Email
                                 Address is
@@ -20,8 +20,8 @@
                         <div class="p-field">
                             <label for="password">Password</label>
                             <input id="current-password" type="password" autocomplete="on" formControlName="password"
-                            [ngClass]="{'border-danger': getFormControll('password').touched && getFormControll('password').invalid}"  class="p-invalid" placeholder="**********"
-                                pInputText />
+                                [ngClass]="{'border-danger': getFormControll('password').touched && getFormControll('password').invalid}"
+                                class="p-invalid" placeholder="**********" pInputText />
                             <small class="p-invalid text-danger"
                                 *ngIf="getFormControll('password').touched && getFormControll('password').invalid">Password
                                 minimum 8 characters
@@ -30,7 +30,7 @@
                     </div>
                     <div class="login-class">
                         <div class="field-radiobutton">
-                            <p-radioButton  formControlName="remeberme"  value="true" inputId="city1"></p-radioButton>
+                            <p-radioButton formControlName="remeberme" value="true" inputId="city1"></p-radioButton>
                             <!-- <input type="radio" name="radio" value="true" id="radio"> -->
 
                             <label for="city">Remember me</label>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="button">
                     <p-toast></p-toast>
-                    <p-button  type="submit" label="Login now" styleClass="p-button"></p-button>
+                    <p-button type="submit" label="Login now" styleClass="p-button"></p-button>
                 </div>
                 <div class="account">
                     <a [routerLink]="'/signup'"> Dont have an account? Join free today</a>

@@ -9,15 +9,15 @@ import { SignupComponent } from './signup/signup.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UsersComponent } from './users/users.component';
-import {InputTextModule} from 'primeng/inputtext';
-import {RadioButtonModule} from 'primeng/radiobutton';
-import {ButtonModule} from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {PasswordModule} from 'primeng/password';
-import {SidebarModule} from 'primeng/sidebar';
+import { PasswordModule } from 'primeng/password';
+import { SidebarModule } from 'primeng/sidebar';
 import { ToastrModule } from 'ngx-toastr';
-import {ToastModule} from 'primeng/toast';
+import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 
 
@@ -44,9 +44,9 @@ import { MessageService } from 'primeng/api';
     ReactiveFormsModule,
     PasswordModule,
     SidebarModule,
-  ToastrModule.forRoot(),
-  ToastModule,
-  
+    ToastrModule.forRoot(),
+    ToastModule,
+
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

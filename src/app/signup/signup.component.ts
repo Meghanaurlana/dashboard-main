@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
-
+import {MessageService} from 'primeng/api';
+import { ToastModule} from 'primeng/toast';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -9,7 +10,7 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 export class SignupComponent implements OnInit {
   signupForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,private messageService: MessageService) {
     this.signupForm = fb.group({});
   }
 
@@ -51,6 +52,7 @@ export class SignupComponent implements OnInit {
   onSubmit(): void {
     console.log(this.signupForm.value);
     this.signupForm.markAllAsTouched();
+    this.messageService.add({severity:'success', summary: 'Success', detail: 'Message Content'});
     
   }
 }
