@@ -14,7 +14,7 @@ import { PrimeNGConfig } from 'primeng/api';
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
 
-  constructor(private fb: FormBuilder,private toastr:ToastrService) {
+  constructor(private fb: FormBuilder,private messageService: MessageService) {
     this.loginForm = fb.group({});
   }
 
@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
         Validators.minLength(8)
       ]),
 
-      radio: new FormControl("", [
+      remeberme: new FormControl( true, [
         Validators.required])
     }
 
@@ -50,7 +50,7 @@ export class LoginComponent implements OnInit {
     console.log(this.loginForm.value);
     this.loginForm.markAllAsTouched();
     // this.toastr.success("login success");
-    // this.messageService.add({severity:'success', summary: 'Success', detail: 'Message Content'});
+    this.messageService.add({severity:'success', summary: 'Success', detail: 'Message Content'});
     // window.localStorage.setItem("KEY", "VALUE");
     // window.localStorage.getItem("KEY");
 

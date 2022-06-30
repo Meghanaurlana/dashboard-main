@@ -18,6 +18,7 @@ import {PasswordModule} from 'primeng/password';
 import {SidebarModule} from 'primeng/sidebar';
 import { ToastrModule } from 'ngx-toastr';
 import {ToastModule} from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 
 
@@ -47,7 +48,7 @@ import {ToastModule} from 'primeng/toast';
   ToastModule,
   
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

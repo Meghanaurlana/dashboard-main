@@ -58,11 +58,11 @@
                     </div>
                 </div>
                 <div class="terms">
-                    <input type="radio" formControlName="radio" value="true">
+                    <p-radioButton  formControlName="privacypolicy"  value="true" inputId="city1"></p-radioButton>
                     <label for="btn">I agree to Terms & Privacy Policy</label>
                     <div>
                         <small id="radio" class="p-invalid text-danger"
-                            *ngIf="getFormControll('radio').touched && getFormControll('radio').invalid">Please agree
+                            *ngIf="getFormControll('privacypolicy').touched && getFormControll('privacypolicy').invalid">Please agree
                             Terms & Privacy Policy</small>
                     </div>
                 </div>

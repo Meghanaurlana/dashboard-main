@@ -30,8 +30,8 @@
                     </div>
                     <div class="login-class">
                         <div class="field-radiobutton">
-                            <!-- <p-radioButton name="city" value="Chicago" inputId="city1"></p-radioButton> -->
-                            <input type="radio" name="radio" value="true" id="radio">
+                            <p-radioButton  formControlName="remeberme"  value="true" inputId="city1"></p-radioButton>
+                            <!-- <input type="radio" name="radio" value="true" id="radio"> -->
 
                             <label for="city">Remember me</label>
                         </div>
@@ -41,6 +41,7 @@
                     </div>
                 </div>
                 <div class="button">
+                    <p-toast></p-toast>
                     <p-button  type="submit" label="Login now" styleClass="p-button"></p-button>
                 </div>
                 <div class="account">

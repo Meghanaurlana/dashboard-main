@@ -37,7 +37,7 @@ export class SignupComponent implements OnInit {
         Validators.minLength(8)
       ]),
 
-      radio: new FormControl("", [
+      privacypolicy: new FormControl(true, [
         Validators.required])
     }
     )}
