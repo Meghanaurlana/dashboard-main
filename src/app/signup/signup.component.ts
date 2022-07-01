@@ -55,7 +55,7 @@ export class SignupComponent implements OnInit {
    
     
 if(this.signupForm.valid){
-  this.messageService.add({severity:'success', summary: 'Success', detail: 'Message Content'});
+  this.messageService.add({severity:'success', summary: 'Success', detail: 'logged in'});
 }
 
 

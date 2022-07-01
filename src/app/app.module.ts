@@ -18,6 +18,9 @@ import { SidebarModule } from 'primeng/sidebar';
 import { ToastrModule } from 'ngx-toastr';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { RegistrationModule } from './registration/registration.module';
+import { ProfileUsersModule } from './profile-users/profile-users.module';
+import { DashBoardModule } from './dash-board/dash-board.module';
 
 
 
@@ -44,6 +47,9 @@ import { MessageService } from 'primeng/api';
     SidebarModule,
     ToastrModule.forRoot(),
     ToastModule,
+    RegistrationModule,
+    ProfileUsersModule,
+    DashBoardModule
 
   ],
   providers: [MessageService],
