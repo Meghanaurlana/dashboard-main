@@ -50,9 +50,14 @@ export class LoginComponent implements OnInit {
     console.log(this.loginForm.value);
     this.loginForm.markAllAsTouched();
     // this.toastr.success("login success");
-    this.messageService.add({severity:'success', summary: 'Success', detail: 'Message Content'});
+    
     // window.localStorage.setItem("KEY", "VALUE");
     // window.localStorage.getItem("KEY");
+if(this.loginForm.valid){
+  this.messageService.add({severity:'success', summary: 'Success', detail: 'Message Content'});
+}
+
+
 
   }
 

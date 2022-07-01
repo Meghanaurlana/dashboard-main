@@ -52,8 +52,13 @@ export class SignupComponent implements OnInit {
   onSubmit(): void {
     console.log(this.signupForm.value);
     this.signupForm.markAllAsTouched();
-    this.messageService.add({severity:'success', summary: 'Success', detail: 'Message Content'});
+   
     
+if(this.signupForm.valid){
+  this.messageService.add({severity:'success', summary: 'Success', detail: 'Message Content'});
+}
+
+
   }
 }
 
