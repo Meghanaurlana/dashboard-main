@@ -60,6 +60,11 @@ if(this.signupForm.valid){
 
 
   }
+
+  // register(){
+  //   this.router.navigate(['login'],{relativeTo: this.route})
+  // }
+
 }
 
 

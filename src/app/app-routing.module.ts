@@ -10,12 +10,12 @@ import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
   // { path: "", redirectTo: "dashboard", pathMatch: "full" },
-  { path: "login", component: LoginComponent },
-  { path: "profile", component: ProfileComponent },
+ 
+  // { path: "profile", component: ProfileComponent },
 
-  { path: "users", component: UsersComponent },
-  { path: "dashboard", component: DashboardComponent },
-  { path: "sidenav", component: SidenavComponent },
+  // { path: "users", component: UsersComponent },
+  // { path: "dashboard", component: DashboardComponent },
+  // { path: "sidenav", component: SidenavComponent },
 
   {
     path: "registration", children: [
