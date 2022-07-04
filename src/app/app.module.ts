@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 
 
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { ProfileComponent } from './profile/profile.component';
-import { UsersComponent } from './users/users.component';
+
+
 import { InputTextModule } from 'primeng/inputtext';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { ButtonModule } from 'primeng/button';
@@ -30,8 +30,8 @@ import { DashBoardModule } from './dash-board/dash-board.module';
   declarations: [
     AppComponent,
     SidenavComponent,
-    ProfileComponent,
-    UsersComponent
+   
+    
   ],
   imports: [
     BrowserModule,

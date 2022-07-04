@@ -1,0 +1,149 @@
+.header {
+    margin-top: 1.5rem;
+}
+
+.title {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 29px;
+}
+
+.body {
+    margin-top: 140px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.editprofile {
+    margin-top: 17px;
+}
+
+.profileimage {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 27px;
+}
+
+.fields {
+    justify-content: center;
+    align-items: center;
+    margin-right: 550px;
+    margin-left: 550px;
+
+}
+
+.fieldname {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.input-box .label {
+
+    width: 71px;
+    left: 576px;
+    top: 365px;
+
+
+}
+
+.input-box .p-invalid {
+    height: 55px;
+    width: 300px;
+    left: 576px;
+    top: 394px;
+    border-radius: 2px;
+
+    display: block;
+
+}
+
+.email {
+    height: 55px;
+    width: 300px;
+    left: 576px;
+    top: 394px;
+    border-radius: 2px;
+    display: block;
+    margin-top: 40px;
+}
+
+.emailid {
+
+    height: 55px;
+    width: 700px;
+    left: 576px;
+    top: 504px;
+    border-radius: 2px;
+
+
+}
+
+// .mobilenumber {
+
+//     width: 300px;
+//     left: 576px;
+//     top: 394px;
+//     border-radius: 2px;
+//     display: block;
+
+// }
+
+.fieldnumber {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputnumber .number {
+    height: 55px;
+    width: 300px;
+    left: 576px;
+    top: 394px;
+    border-radius: 2px;
+
+    display: block;
+
+}
+
+.inputnumber .input {
+    height: 55px;
+    width: 300px;
+    left: 976px;
+    top: 614px;
+    border-radius: 2px;
+
+}
+
+.button {
+    height: 42px;
+    width: 176px;
+    align-items: right;
+    justify-content: right;
+    display: flex;
+   margin-top: 30px;
+    margin-left: 1130px;
+
+    border-radius: 4px;
+   
+    
+
+}
+
+
+
+.button .submit{
+    
+    height: 42px;
+    width: 176px;
+   background: #0AA6FE;
+  color: #fff;
+   
+    border-radius: 4px;
+    
+}
