@@ -8,8 +8,8 @@ import {MessageService} from 'primeng/api';
 })
 export class DashboardComponent implements OnInit {
 
-  basicData: any
-
+  basicData: any;
+  basicOptions:any
   
   constructor(private messageService: MessageService,
     //  private configService: AppConfigService
@@ -17,7 +17,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
       this.basicData = {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          labels: ['.', '.', '.', '.', '.', '.', '.'],
           datasets: [
               {
                   label: 'First Dataset',
@@ -26,13 +26,7 @@ export class DashboardComponent implements OnInit {
                   borderColor: '#42A5F5',
                   tension: .4
               },
-              {
-                  label: 'Second Dataset',
-                  data: [28, 48, 40, 19, 86, 27, 90],
-                  fill: false,
-                  borderColor: '#FFA726',
-                  tension: .4
-              }
+            
           ]
       }
     }

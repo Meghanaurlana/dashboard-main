@@ -12,6 +12,8 @@ import { SidebarModule } from 'primeng/sidebar';
 import { ToastrModule } from 'ngx-toastr';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import {ChartModule} from 'primeng/chart';
+import {CardModule} from 'primeng/card';
 
 
 
@@ -29,8 +31,10 @@ import { MessageService } from 'primeng/api';
     BrowserAnimationsModule,
     PasswordModule,
     SidebarModule,
+    CardModule,
     ToastModule,
     ToastrModule,
+    ChartModule
     
 
   ],

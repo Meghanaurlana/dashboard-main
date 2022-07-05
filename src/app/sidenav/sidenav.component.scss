@@ -1,6 +1,41 @@
-.container {
-    background-color: #000;
+.sidenav {
+    height: 1052px;
+    width: 246px;
+    left: 32px;
+    top: 0px;
+    border-radius: 0px;
 }
-.p-sidebar{
-    color: aqua;
+
+.title {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.list {
+    padding-top: 130px;
+    padding-left: 50px;
+}
+
+.dashboard,
+.users,
+.profile,
+.settings,
+.logout {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 15px;
+display: flex;
+}
+
+.list span{
+    margin-left: 20px;
+   
 }

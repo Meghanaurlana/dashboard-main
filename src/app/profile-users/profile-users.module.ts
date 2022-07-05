@@ -13,7 +13,7 @@ import { SidebarModule } from 'primeng/sidebar';
 import { ToastrModule } from 'ngx-toastr';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
-
+import {TableModule} from 'primeng/table';
 
 
 @NgModule({
@@ -33,7 +33,8 @@ import { MessageService } from 'primeng/api';
     PasswordModule,
     SidebarModule,
     ToastrModule,
-    ToastModule
+    ToastModule,
+    TableModule
   ],
   providers: [MessageService],
 })

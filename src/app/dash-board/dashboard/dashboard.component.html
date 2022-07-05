@@ -1,5 +1,78 @@
 
-<!-- <div class="card">
-    <h5>Basic</h5>
-    <p-chart type="line" [data]="basicData" [options]="basicOptions"></p-chart>
-</div> -->
+
+<div class="main">
+    <div class="sidebar"></div>
+<div class="dashboard">
+
+    <div class="header">
+        <div class="title">
+            <span>Dashboard</span>
+        </div>
+        <div class="icons">
+            <div class="bell"> <i class="pi pi-bell" style="font-size: 1.5rem"></i></div>
+
+            <div class="imageicon"> <img src="/assets/images/imageicon.jpg"></div>
+        </div>
+    </div>
+    <div class="card">
+
+        <div class="cards">
+            <p-card [style]="{'width': '12.5rem', 'margin-bottom': '2em', 'style':'none'}">
+                <span>2,223,214</span>
+                <label>total view</label>
+            </p-card>
+        </div>
+
+        <div class="cards">
+            <p-card [style]="{'width': '12.5rem', 'margin-bottom': '2em'}">
+                <span>1,312,022</span>
+                <label>total Download</label>
+            </p-card>
+        </div>
+
+        <div class="cards">
+            <p-card [style]="{'width': '12.5rem', 'margin-bottom': '2em'}">
+                <span>1,959,453</span>
+                <label>total read</label>
+            </p-card>
+        </div>
+
+        <div class="cards">
+            <p-card [style]="{'width': '12.5rem', 'margin-bottom': '2em'}">
+                <span>234,032</span>
+                <label>total Comments</label>
+            </p-card>
+        </div>
+
+    </div>
+
+    <div class="view">
+        <div class="statistics">
+            <span>View statistic</span>
+        </div>
+        <div class="date">
+            <i class="pi pi-calendar" style="font-size: 1rem"></i>
+            <span>Yesterday</span>
+        </div>
+    </div>
+
+
+    <div class="graph">
+
+        <p-chart type="line" width="1188px" height="136px" [data]="basicData" [options]="basicOptions"></p-chart>
+    </div>
+
+
+
+    <div class="users">
+        <div class="user">
+            <span>Users</span>
+        </div>
+        <div class="seemore">
+            <span>See More</span>
+    
+        </div>
+    </div>
+
+</div>
+</div>

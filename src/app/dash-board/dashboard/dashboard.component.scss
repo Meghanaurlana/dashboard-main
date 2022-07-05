@@ -1,0 +1,100 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-family: Roboto;
+font-size: 40px;
+font-weight: 400;
+line-height: 47px;
+letter-spacing: 0em;
+text-align: left;
+margin-left: 20px;
+}
+
+.icons{
+    
+    display: flex;
+      margin-right: 40px;
+   
+   }
+   
+   .icons .bell{
+      margin-right: 80px;
+      margin-top: 10px;
+      
+   }
+   
+   .icons .imageicon{
+      
+       
+       margin-right: 1px;
+       
+   
+   }
+   .card{
+       display: flex;
+       justify-content: space-evenly;
+       display: -webkit-box;
+      
+   }
+
+.view{
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+.view .statistics{
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.view .date{
+    margin-right: 90px;
+border: 1px solid;
+padding: 8px;
+height: 40px;
+width: 110px;
+}
+
+
+.graph{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.users{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user{
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+height: 21px;
+width: 46px;
+left: 0px;
+top: 17.5px;
+border-radius: nullpx;
+margin-left: 30px;
+}
+
+
+.seemore{
+    margin-right: 90px;
+    height: 32px;
+width: 75px;
+left: 1153px;
+top: 12px;
+border-radius: 4px;
+
+}

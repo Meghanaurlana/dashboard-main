@@ -16,7 +16,7 @@ const routes: Routes = [
 
   // { path: "users", component: UsersComponent },
   // { path: "dashboard", component: DashboardComponent },
-  // { path: "sidenav", component: SidenavComponent },
+  { path: "sidenav", component: SidenavComponent },
 
   {
     path: "registration", children: [
