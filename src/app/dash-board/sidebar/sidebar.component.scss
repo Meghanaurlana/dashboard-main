@@ -1,9 +1,10 @@
 .sidenav {
     height: 1052px;
-    width: 246px;
+    width: 255px;
     left: 32px;
     top: 0px;
     border-radius: 0px;
+    margin-top: 25px;
 }
 
 .title {
@@ -13,6 +14,7 @@
     line-height: 47px;
     letter-spacing: 0em;
     text-align: left;
+    margin-left: .625rem;
 }
 
 .list {
@@ -31,7 +33,7 @@
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    padding: 15px;
+    padding: 7px;
 display: flex;
 }
 
