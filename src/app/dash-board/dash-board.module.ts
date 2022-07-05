@@ -14,12 +14,17 @@ import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import {ChartModule} from 'primeng/chart';
 import {CardModule} from 'primeng/card';
-
-
+import { ProfileComponent } from './profile/profile.component';
+import { UsersComponent } from './users/users.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import {TableModule} from 'primeng/table';
 
 @NgModule({
   declarations: [
-   DashboardComponent
+   DashboardComponent,
+   ProfileComponent,
+   UsersComponent,
+   SidebarComponent
   ],
   imports: [
     CommonModule,
@@ -33,6 +38,7 @@ import {CardModule} from 'primeng/card';
     SidebarModule,
     CardModule,
     ToastModule,
+    TableModule,
     ToastrModule,
     ChartModule
     

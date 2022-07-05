@@ -3,10 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dash-board/dashboard/dashboard.component';
 import { AuthGuard } from './gurds/auth.guard';
 import { LoginComponent } from './registration/login/login.component';
-import { ProfileComponent } from './profile-users/profile/profile.component';
+import { ProfileComponent } from './dash-board/profile/profile.component';
 import { RegisterComponent } from './registration/register/register.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
-import { UsersComponent } from './profile-users/users/users.component';
+import { SidebarComponent } from './dash-board/sidebar/sidebar.component';
+import { UsersComponent } from './dash-board/users/users.component';
 
 
 const routes: Routes = [
@@ -16,7 +16,7 @@ const routes: Routes = [
 
   // { path: "users", component: UsersComponent },
   // { path: "dashboard", component: DashboardComponent },
-  { path: "sidenav", component: SidenavComponent },
+  // { path: "sidenav", component: SidenavComponent },
 
   {
     path: "registration", children: [
@@ -27,15 +27,17 @@ const routes: Routes = [
 
   {
     path: "dash-board", children: [
-      { path: "dashboard", component: DashboardComponent }
+      { path: "dashboard", component: DashboardComponent },
+      { path: "profile", component: ProfileComponent },
+      { path: "users", component: UsersComponent },
+      {path:"sidebar", component:SidebarComponent}
 
     ]
   },
 
   {
     path: "profile-users", children: [
-      { path: "profile", component: ProfileComponent },
-      { path: "users", component: UsersComponent }
+     
     ]
   }
 

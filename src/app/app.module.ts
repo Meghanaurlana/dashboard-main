@@ -3,12 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-
-
-import { SidenavComponent } from './sidenav/sidenav.component';
-
-
 import { InputTextModule } from 'primeng/inputtext';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { ButtonModule } from 'primeng/button';
@@ -20,7 +14,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { RegistrationModule } from './registration/registration.module';
-import { ProfileUsersModule } from './profile-users/profile-users.module';
+
 import { DashBoardModule } from './dash-board/dash-board.module';
 
 
@@ -29,9 +23,9 @@ import { DashBoardModule } from './dash-board/dash-board.module';
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent,
-   
-    
+
+
+
   ],
   imports: [
     CommonModule,
@@ -48,11 +42,12 @@ import { DashBoardModule } from './dash-board/dash-board.module';
     ToastrModule.forRoot(),
     ToastModule,
     RegistrationModule,
-    ProfileUsersModule,
+ 
     DashBoardModule
 
   ],
-  exports:[SidenavComponent],
+
+
   providers: [MessageService],
   bootstrap: [AppComponent]
 })
