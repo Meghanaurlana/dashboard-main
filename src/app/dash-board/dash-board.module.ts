@@ -17,7 +17,7 @@ import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
-    DashboardComponent
+   DashboardComponent
   ],
   imports: [
     CommonModule,
@@ -33,6 +33,8 @@ import { MessageService } from 'primeng/api';
     ToastrModule,
     
 
-  ]
+  ],
+  providers:[MessageService]
+
 })
 export class DashBoardModule { }

@@ -34,6 +34,7 @@ import { MessageService } from 'primeng/api';
     SidebarModule,
     ToastrModule,
     ToastModule
-  ]
+  ],
+  providers: [MessageService],
 })
 export class ProfileUsersModule { }

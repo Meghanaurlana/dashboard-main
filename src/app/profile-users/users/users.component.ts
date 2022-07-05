@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+// import { Product } from '../../domain/product';
+// import { ProductService } from '../../service/productservice';
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
-  constructor() { }
+  // products: Product[];
 
-  ngOnInit(): void {
+  constructor(
+    // private 
+    // productService: ProductService
+    )
+     { }
+
+  ngOnInit() {
+      // this.productService.getProductsSmall().then(data => this.products = data);
   }
 
 }
