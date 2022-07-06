@@ -1,5 +1,5 @@
 .sidenav {
-    height: 1052px;
+    height: 948px;
     width: 255px;
     left: 32px;
     top: 0px;
@@ -35,7 +35,19 @@
     text-align: left;
     padding: 7px;
 display: flex;
+color: #000000;
 }
+:host ::ng-deep .p-button {
+   
+    height: 40px;
+    width: 150px;
+   color: #000000;
+    border-radius: 50px;
+    padding: 8px, 12px, 8px, 12px;
+}
+
+
+
 
 .list span{
     margin-left: 20px;

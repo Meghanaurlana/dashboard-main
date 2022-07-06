@@ -18,6 +18,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { UsersComponent } from './users/users.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {TableModule} from 'primeng/table';
+import {CheckboxModule} from 'primeng/checkbox';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {TableModule} from 'primeng/table';
     ToastModule,
     TableModule,
     ToastrModule,
-    ChartModule
+    ChartModule,
+    CheckboxModule
     
 
   ],

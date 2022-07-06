@@ -1,32 +1,42 @@
-
 <div class="main">
     <div class="sidebar">
-       <app-sidebar></app-sidebar>
+        <app-sidebar></app-sidebar>
     </div>
 
 
-<div class="users">
+    <div class="users">
+        <div class="title"><span>Users list</span> </div>
+        <div class="table">
+            <p-table [value]="products" responsiveLayout="scroll">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>
+                            <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                        </th>
+                        <th>Name</th>
+                        <th>Email Address</th>
+                        <th>Phone Number</th>
+                        <th>Date Created</th>
+                        <th>Pincode Address</th>
+                    </tr>
+                </ng-template>
 
 
-<p-table >
-    <ng-template pTemplate="header">
-        <tr>
-            <th>Vin</th>
-            <th>Year</th>
-            <th>Brand</th>
-            <th>Color</th>
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-car>
-        <tr>
-            <td>{{car.vin}}</td>
-            <td>{{car.year}}</td>
-            <td>{{car.brand}}</td>
-            <td>{{car.color}}</td>
-        </tr>
-    </ng-template>
-</p-table>
+                <ng-template pTemplate="body" let-product>
 
+                    <tr>
+                        <td>
+                            <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                        </td>
+                        <td>{{product.Name}}</td>
+                        <td>{{product.EmailAddress}}</td>
+                        <td>{{product.PhoneNumber}}</td>
+                        <td>{{product.DateCreated}}</td>
+                        <td>{{product.PincodeAddress}}</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+
+        </div>
+    </div>
 </div>
-</div>
-
