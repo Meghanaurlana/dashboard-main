@@ -15,6 +15,7 @@
     letter-spacing: 0em;
     text-align: left;
     margin-left: .625rem;
+    color: #0A376E;
 }
 
 .list {
@@ -33,21 +34,41 @@
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    padding: 7px;
+    padding: 16px;
 display: flex;
 color: #000000;
+font-style: none;
+border-radius: 3px;
+height: 40px;
+width: 152px;
+left: 0px;
+top: 0px;
+border-radius: 50px;
+padding: 8px, 12px, 8px, 12px;
+
+
 }
-:host ::ng-deep .p-button {
-   
-    height: 40px;
-    width: 150px;
-   color: #000000;
-    border-radius: 50px;
-    padding: 8px, 12px, 8px, 12px;
+.dashboard :hover {
+    background-color: #DAE9FC;
+    cursor: pointer;
+  }
+.profile :hover {
+    background-color: #DAE9FC;
+    cursor: pointer;
+  }
+.users :hover {
+    background-color: #DAE9FC;
+    cursor: pointer;
+  }
+.settings :hover {
+    background-color: #DAE9FC;
+    cursor: pointer;
+  }
+
+.logout :hover {
+  background-color: #DAE9FC;
+  cursor: pointer;
 }
-
-
-
 
 .list span{
     margin-left: 20px;

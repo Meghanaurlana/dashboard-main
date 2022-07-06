@@ -86,7 +86,7 @@ form label {
 
 .user-details .input-box input:focus,
 .user-details .input-box input:valid {
-    border-color: #ffffff;
+    background: transparent;
 }
 
 :host ::ng-deep p-radioButton{

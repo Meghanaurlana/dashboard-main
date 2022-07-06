@@ -26,14 +26,11 @@ export interface Product {
 }
 
 const tableData = [
-
   {
     "Name": "Robert Hilington",
     "EmailAddress": "robert12@gmail.com",
     "PhoneNumber": 123-456-7890,
     "DateCreated":"21 Dec 2020",
-  
-
   },
   {
     "Name": "Thomas H",

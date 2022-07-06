@@ -51,9 +51,13 @@ export class LoginComponent implements OnInit {
     // window.localStorage.getItem("KEY");
 if(this.loginForm.valid){
   this.messageService.add({severity:'success', summary: 'Success', detail: 'Message Content'});
+}else{
+  
+    this.messageService.add({severity:'error', summary: 'please fill required fields', detail: 'please fill required fields'});
+}
 }
  }
-}
+
 
 
 

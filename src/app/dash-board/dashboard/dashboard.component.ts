@@ -21,7 +21,7 @@ export class DashboardComponent implements OnInit {
           datasets: [
               {
                   label: 'First Dataset',
-                  data: [65, 59, 80, 81, 56, 55, 40],
+                  data: [65, 59, 80, 91, 56, 55, 40],
                   fill: false,
                   borderColor: '#42A5F5',
                   tension: .4

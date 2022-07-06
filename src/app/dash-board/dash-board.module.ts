@@ -19,6 +19,9 @@ import { UsersComponent } from './users/users.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {TableModule} from 'primeng/table';
 import {CheckboxModule} from 'primeng/checkbox';
+import {CalendarModule} from 'primeng/calendar';
+import {DividerModule} from 'primeng/divider';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +45,9 @@ import {CheckboxModule} from 'primeng/checkbox';
     TableModule,
     ToastrModule,
     ChartModule,
-    CheckboxModule
+    CheckboxModule,
+    CalendarModule,
+    DividerModule
     
 
   ],

@@ -56,6 +56,9 @@ export class RegisterComponent implements OnInit {
     
 if(this.signupForm.valid){
   this.messageService.add({severity:'success', summary: 'Success', detail: 'logged in'});
+}else{
+  
+  this.messageService.add({severity:'error', summary: 'please fill required fields', detail: 'please fill required fields'});
 }
 
 
