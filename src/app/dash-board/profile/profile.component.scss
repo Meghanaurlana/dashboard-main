@@ -3,30 +3,30 @@
 }
 
 .sidebar {
-    border: 1px solid
+    border: .0625rem solid
 }
 
 .profile {
-    margin-left: 60px;
+    margin-left: 3.75rem;
     align-items: right;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 1.5625rem;
 }
 
 .header {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display: flex;
     justify-content: space-between;
 }
 
 .title {
     font-family: Roboto;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 400;
-    line-height: 47px;
+    line-height: 2.9375rem;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 55px;
+    margin-left: 3.4375rem;
 }
 
 .icons {
@@ -34,36 +34,36 @@
 }
 
 .icons .bell {
-    margin-right: 20px;
-    margin-top: 10px;
+    margin-right: 1.25rem;
+    margin-top: .625rem;
 }
 
 .icons .imageicon {
-    margin-right: 100px;
+    margin-right: 6.25rem;
 }
 
 .body {
-    height: 582px;
-    width: 1217px;
-    left: 344px;
-    top: 140px;
-    border-radius: 4px;
-    border: 1px solid;
-    margin-left: 125px;
-    margin-top: 30px;
+    height: 36.375rem;
+    width: 76.0625rem;
+    left: 21.5rem;
+    top: 8.75rem;
+    border-radius: .25rem;
+    border: .0625rem solid;
+    margin-left: 7.8125rem;
+    margin-top: 1.875rem;
 }
 
 .editprofile {
-    margin-top: 17px;
-    margin-left: 30px;
-    font-size: 20px;
+    margin-top: 1.0625rem;
+    margin-left: 1.875rem;
+    font-size: 1.25rem;
 }
 
 .name {
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: 14px;
+    font-size: .875rem;
 }
 
 .profileimage {
@@ -75,8 +75,8 @@
 .fields {
     justify-content: center;
     align-items: center;
-    margin-right: 270px;
-    margin-left: 270px;
+    margin-right: 16.875rem;
+    margin-left: 16.875rem;
 }
 
 .fieldname {
@@ -85,75 +85,75 @@
 }
 
 .input-box .label {
-    width: 71px;
-    left: 576px;
-    top: 365px;
+    width: 4.4375rem;
+    left: 36rem;
+    top: 22.8125rem;
 }
 
 .input-box .p-invalid {
-    height: 55px;
-    width: 300px;
-    left: 576px;
-    top: 394px;
-    border-radius: 2px;
+    height: 3.4375rem;
+    width: 18.75rem;
+    left: 36rem;
+    top: 24.625rem;
+    border-radius: .125rem;
     display: block;
 }
 
 .email {
-    height: 55px;
-    left: 576px;
-    top: 370px;
-    border-radius: 2px;
+    height: 3.4375rem;
+    left: 36rem;
+    top: 23.125rem;
+    border-radius: .125rem;
     display: block;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .emailid {
-    height: 55px;
-    width: 680px;
-    left: 576px;
-    top: 504px;
-    border-radius: 2px;
+    height: 3.4375rem;
+    width: 42.5rem;
+    left: 36rem;
+    top: 31.5rem;
+    border-radius: .125rem;
 }
 
 .mobilenumber {
-    width: 300px;
-    left: 576px;
-    top: 394px;
-    border-radius: 2px;
+    width: 18.75rem;
+    left: 36rem;
+    top: 24.625rem;
+    border-radius: .125rem;
     display: block;
 }
 
 .fieldnumber {
-    margin-top: 55px;
+    margin-top: 3.4375rem;
     display: flex;
     justify-content: space-between;
 }
 
 .inputnumber .number {
-    height: 55px;
-    width: 300px;
-    left: 576px;
-    top: 394px;
-    border-radius: 2px;
+    height: 3.4375rem;
+    width: 18.75rem;
+    left: 36rem;
+    top: 24.625rem;
+    border-radius: .125rem;
     display: block;
 }
 
 .inputnumber .input {
-    height: 55px;
-    width: 300px;
-    left: 976px;
-    top: 614px;
-    border-radius: 2px;
+    height: 3.4375rem;
+    width: 18.75rem;
+    left: 61rem;
+    top: 38.375rem;
+    border-radius: .125rem;
 }
 
 :host ::ng-deep .button .submit {
-    height: 42px;
-    width: 176px;
+    height: 2.625rem;
+    width: 11rem;
     align-items: right;
     justify-content: right;
     display: flex;
-    margin-top: 30px;
-    margin-left: 1170px;
+    margin-top: 1.875rem;
+    margin-left: 73.125rem;
     color: #fff;
 }

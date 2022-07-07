@@ -35,12 +35,7 @@ const routes: Routes = [
     ]
   },
 
-  {
-    path: "profile-users", children: [
-     
-    ]
-  }
-
+  
 
 
 

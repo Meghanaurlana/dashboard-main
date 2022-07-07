@@ -3,15 +3,15 @@
 }
 
 .sidebar {
-    border: 1px solid
+    border: .0625rem solid
 }
 
 .dashboard {
-    margin-left: 30px;
+    margin-left: 1.875rem;
     align-items: right;
     width: 100%;
-    margin-top: 25px;
-    margin-right: 30px;
+    margin-top: 1.5625rem;
+    margin-right: 1.875rem;
 }
 
 .header {
@@ -21,32 +21,32 @@
 
 .title {
     font-family: Roboto;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 400;
-    line-height: 47px;
+    line-height: 2.9375rem;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 1.25rem;
     color: #0A376E;
   
 }
 
 .icons {
     display: flex;
-    margin-right: 40px;
+    margin-right: 2.5rem;
 }
 
 .icons .bell {
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: .625rem;
+    margin-top: .625rem;
 }
 
 .icons .imageicon {
-    margin-right: 1px;
+    margin-right: .0625rem;
 }
 
 .card {
-    padding-top:100px ;
+    padding-top:6.25rem ;
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(15,1fr);
@@ -54,9 +54,9 @@
 }
 .cards span{
     font-family: Roboto;
-font-size: 28px;
+font-size: 1.75rem;
 font-weight: 700;
-line-height: 33px;
+line-height: 2.0625rem;
 letter-spacing: 0em;
 text-align: left;
 color: #000000;
@@ -65,15 +65,15 @@ color: #000000;
 
 .cards label{
     font-family: Roboto;
-font-size: 14px;
+font-size: .875rem;
 font-weight: 400;
-line-height: 16px;
+line-height: 1rem;
 letter-spacing: 0em;
 text-align: left;
 color: #8E8E8E;
 }
 .view {
-    padding: 17px;
+    padding: 1.0625rem;
     display: flex;
     justify-content: space-between;
 }
@@ -81,9 +81,9 @@ color: #8E8E8E;
 
 .view .statistics {
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 1.3125rem;
     letter-spacing: 0em;
     text-align: left;
     color: #2C2C2C;
@@ -91,24 +91,24 @@ color: #8E8E8E;
 }
 
 .view .date {
-    margin-right: 90px;
+    margin-right: 5.625rem;
     display: flex;
-    padding: 8px;
-    height: 0px;
-    width: 100px;
+    padding: .5rem;
+    height: 0rem;
+    width: 6.25rem;
 }
 
 :host ::ng-deep .p-calendar {
-    height: 2px;
+    height: .125rem;
 }
 
 .date label {
-    height: 16px;
-    width: 62px;
-    left: 40px;
-    top: 12px;
+    height: 1rem;
+    width: 3.875rem;
+    left: 2.5rem;
+    top: .75rem;
     color: #0C4284;
-    padding-left: 10px;
+    padding-left: .625rem;
     cursor: pointer;
 }
 
@@ -116,42 +116,42 @@ color: #8E8E8E;
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .users {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .user {
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 1.3125rem;
     letter-spacing: 0em;
     text-align: left;
-    height: 21px;
-    width: 46px;
-    left: 0px;
-    top: 17.5px;
+    height: 1.3125rem;
+    width: 2.875rem;
+    left: 0rem;
+    top: 1.0938rem;
     border-radius: nullpx;
-    margin-left: 30px;
+    margin-left: 1.875rem;
     
 }
 
 .seemore {
-    margin-right: 90px;
-    height: 32px;
-    width: 75px;
-    left: 1153px;
-    top: 12px;
-    border-radius: 4px;
+    margin-right: 5.625rem;
+    height: 2rem;
+    width: 4.6875rem;
+    left: 72.0625rem;
+    top: .75rem;
+    border-radius: .25rem;
     cursor: pointer;
     color: #0C4284;
     
 }
 .table{
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
