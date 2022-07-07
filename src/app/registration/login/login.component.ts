@@ -43,7 +43,6 @@ export class LoginComponent implements OnInit {
 
   }
   onSubmit(){
-    console.log(this.loginForm.value);
     this.loginForm.markAllAsTouched();
     // this.toastr.success("login success");
     
@@ -51,6 +50,7 @@ export class LoginComponent implements OnInit {
     // window.localStorage.getItem("KEY");
 if(this.loginForm.valid){
   this.messageService.add({severity:'success', summary: 'Success', detail: 'Message Content'});
+  console.log(this.loginForm.value);
 }else{
   
     this.messageService.add({severity:'error', summary: 'please fill required fields', detail: 'please fill required fields'});

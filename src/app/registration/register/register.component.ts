@@ -8,15 +8,15 @@ import { ToastModule} from 'primeng/toast';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-  signupForm: FormGroup;
+  registerForm: FormGroup;
 
   constructor(private fb: FormBuilder,private messageService: MessageService) {
-    this.signupForm = fb.group({});
+    this.registerForm = fb.group({});
   }
 
   ngOnInit(): void {
 
-    this.signupForm = this.fb.group({
+    this.registerForm = this.fb.group({
       firstName: new FormControl('', [
         Validators.required,
         Validators.minLength(3)
@@ -45,16 +45,19 @@ export class RegisterComponent implements OnInit {
   
 
   getFormControll(fieldName: string) {
-    return this.signupForm.controls[fieldName];
+    return this.registerForm.controls[fieldName];
 
   }
 
   onSubmit(): void {
-    console.log(this.signupForm.value);
-    this.signupForm.markAllAsTouched();
    
+    this.registerForm.markAllAsTouched();
+   if(this.getFormControll('privacypolicy').invalid){
+    this.messageService.add({severity:'error', summary: 'please fill required fields', detail: 'Please agree Terms & Privacy Policy'});
+   }
     
-if(this.signupForm.valid){
+if(this.registerForm.valid){
+  console.log(this.registerForm.value);
   this.messageService.add({severity:'success', summary: 'Success', detail: 'logged in'});
 }else{
   
