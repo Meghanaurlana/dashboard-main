@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
         Validators.minLength(8)
       ]),
 
-      remeberme: new FormControl( true, [
+      remeberme: new FormControl( false, [
         Validators.required])
     }
     )

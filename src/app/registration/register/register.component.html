@@ -53,7 +53,7 @@
                             Password is
                             required</small>
                         <small class="p-invalid text-danger"
-                            *ngIf="getFormControll('confirmPassword').invalid && getFormControll('password').value != getFormControll('confirmPassword').value">Password
+                            *ngIf=" !(getFormControll('password').value === getFormControll('confirmPassword').value)">Password
                             mismatch</small>
                     </div>
                 </div>

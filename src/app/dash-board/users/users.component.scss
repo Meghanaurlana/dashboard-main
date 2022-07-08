@@ -15,6 +15,26 @@ letter-spacing: 0em;
 text-align: left;
 
 }
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons .bell {
+    margin-right: 1.25rem;
+    margin-top: .625rem;
+}
+
+.icons .imageicon {
+    margin-right: 6.25rem;
+}
+
+
+
 
 .table{
     margin-top: 4.375rem;

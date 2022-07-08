@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
-import {MessageService} from 'primeng/api';
-import { ToastModule} from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+import { ToastModule } from 'primeng/toast';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -10,7 +10,7 @@ import { ToastModule} from 'primeng/toast';
 export class RegisterComponent implements OnInit {
   registerForm: FormGroup;
 
-  constructor(private fb: FormBuilder,private messageService: MessageService) {
+  constructor(private fb: FormBuilder, private messageService: MessageService) {
     this.registerForm = fb.group({});
   }
 
@@ -38,11 +38,12 @@ export class RegisterComponent implements OnInit {
         Validators.minLength(8)
       ]),
 
-      privacypolicy: new FormControl(true, [
+      privacypolicy: new FormControl(false, [
         Validators.required])
     }
-    )}
-  
+    )
+  }
+
 
   getFormControll(fieldName: string) {
     return this.registerForm.controls[fieldName];
@@ -50,20 +51,14 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit(): void {
-   
     this.registerForm.markAllAsTouched();
-   if(this.getFormControll('privacypolicy').invalid){
-    this.messageService.add({severity:'error', summary: 'please fill required fields', detail: 'Please agree Terms & Privacy Policy'});
-   }
-    
-if(this.registerForm.valid){
-  console.log(this.registerForm.value);
-  this.messageService.add({severity:'success', summary: 'Success', detail: 'logged in'});
-}else{
-  
-  this.messageService.add({severity:'error', summary: 'please fill required fields', detail: 'please fill required fields'});
-}
 
+    if (this.registerForm.invalid || this.getFormControll("password").value != this.getFormControll("confirmPassword").value) {
+      return this.messageService.add({ severity: 'error', summary: 'please fill required fields', detail: 'please fill required fields' });
+    } else if (!this.getFormControll('privacypolicy').value) {
+      return this.messageService.add({ severity: 'error', summary: 'please agree to terms and conditions', detail: 'please agree to terms and conditions' });
+    } console.log(this.registerForm.value);
+    return this.messageService.add({ severity: 'success', summary: 'Success', detail: 'registeredy' });
 
   }
 
