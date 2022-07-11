@@ -51,6 +51,7 @@
     justify-content: space-evenly;
     grid-template-columns: repeat(15,1fr);
     border: none;
+    cursor: pointer;
 }
 .cards span{
     font-family: Roboto;
@@ -143,13 +144,15 @@ color: #8E8E8E;
 
 .seemore {
     margin-right: 5.625rem;
-    height: 2rem;
+    height: 1.5rem;
     width: 4.6875rem;
     left: 72.0625rem;
     top: .75rem;
     border-radius: .25rem;
     cursor: pointer;
     color: #0C4284;
+    border: 1px solid;
+    text-align: center;
     
 }
 .table{

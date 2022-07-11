@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.basicData = {
-      labels: ['.', '.', '.', '.', '.', '.', '.'],
+      labels: ['1', '2', '3', '4', '5', '6', '7'],
       datasets: [
         {
           label: 'First Dataset',
@@ -32,6 +32,37 @@ export class DashboardComponent implements OnInit {
 
     this.products = tableData;
   }
+
+
+  // oncardclick(){
+  //   this.basicData = {
+  //     labels: ['1', '2', '3', '4', '5', '6', '7'],
+  //     datasets: [
+  //       {
+  //         label: 'First Dataset',
+  //         data: [65, 99, 80, 91, 56, 55, 40],
+  //         fill: false,
+  //         borderColor: '#42A5F5',
+  //         tension: 0.4,
+  //       },
+  //     ],
+  //   };
+
+  oncardclick(i:number){
+    this.basicData = {
+      labels: ['1', '2', '3', '4', '5', '6', '7'],
+      datasets: [
+        {
+          label: 'First Dataset',
+          data: [65 * i , 59 + i , 80 / i , 91 - i , 56 + i, 55 * i, 40 - i],
+          fill: false,
+          borderColor: '#42A5F5',
+          tension: 0.4,
+        },
+      ],
+    };
+
+  }
 }
 
 export interface Product {
@@ -41,6 +72,7 @@ export interface Product {
   DateCreated?: string;
   PincodeAddress?: number;
 }
+
 
 const tableData = [
   {
@@ -68,3 +100,5 @@ const tableData = [
     DateCreated: '21 Dec 2020',
   },
 ];
+
+
