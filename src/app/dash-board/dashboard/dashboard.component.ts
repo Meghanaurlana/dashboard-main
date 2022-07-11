@@ -33,9 +33,6 @@ export class DashboardComponent implements OnInit {
     this.products = tableData;
   }
 
-
-
-
   oncardclick(i: number) {
     this.basicData = {
       labels: ['1', '2', '3', '4', '5', '6', '7'],
@@ -53,9 +50,10 @@ export class DashboardComponent implements OnInit {
   }
 }
 
+
 export interface Product {
   Name?: string;
-  label?:string;
+  label?: string;
 
 }
 
@@ -63,21 +61,19 @@ export interface Product {
 const tableData = [
   {
     Name: 'Robert Hilington',
-    label:'RH'
-
+    label: 'RH'
   },
   {
     Name: 'Thomas H',
-    label:'TH'
+    label: 'TH'
   },
   {
     Name: 'Robert Hilington',
-    label:'RH'
-
+    label: 'RH'
   },
   {
     Name: 'Robert C ',
-    label:'RC'
+    label: 'RC'
   },
 ];
 

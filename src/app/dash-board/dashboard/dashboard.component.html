@@ -7,7 +7,8 @@
 
         <div class="header">
             <div class="title">
-                <span>Dashboard</span>
+                <h1>Dashboard</h1>
+                <!-- HEADER -->
             </div>
             <div class="icons">
                 <div class="bell"> <i class="pi pi-bell" style="font-size: 1.5rem"></i></div>
@@ -21,8 +22,7 @@
         <div class="card">
 
             <div class="cards">
-                <p-card [style]="{'width': '12.5rem', 'margin-bottom': '2em', 'style':'none'}"
-                    (click)="oncardclick(1.2)">
+                <p-card [style]="{'width': '12.5rem', 'margin-bottom': '2em'}" (click)="oncardclick(1.2)">
                     <span>2,223,214</span>
                     <label>total view</label>
                 </p-card>
@@ -76,32 +76,23 @@
                 <span>Users</span>
             </div>
             <div class="seemore">
-                <span>See More</span>
-
+                <span >See More</span>
             </div>
         </div>
         <hr>
         <div class="table">
             <p-table [value]="products" responsiveLayout="scroll">
-                <ng-template pTemplate="header">
-
-                </ng-template>
-
 
                 <ng-template pTemplate="body" let-product>
-
                     <tr>
-                        
-                       
-                           <td> <p-avatar  styleClass="mr-2" size="small" shape="circle"> {{ product.label}}</p-avatar>
-                            {{product.Name}}</td>
-
-
+                        <td>
+                            <p-avatar styleClass="mr-2" size="small" shape="circle"> {{ product.label}}</p-avatar>
+                            {{product.Name}}
+                        </td>
                     </tr>
                 </ng-template>
+
             </p-table>
-
         </div>
-
     </div>
 </div>

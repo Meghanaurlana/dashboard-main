@@ -23,6 +23,8 @@ import { CalendarModule } from 'primeng/calendar';
 import { DividerModule } from 'primeng/divider';
 import {AvatarModule} from 'primeng/avatar';
 import {AvatarGroupModule} from 'primeng/avatargroup';
+import { DashBoardRoutingModule } from './dash-board-routing.module';
+
 
 
 @NgModule({
@@ -52,7 +54,9 @@ import {AvatarGroupModule} from 'primeng/avatargroup';
     CalendarModule,
     DividerModule,
     AvatarModule,
-    AvatarGroupModule
+    AvatarGroupModule,
+    DashBoardRoutingModule,
+
   ],
   providers: [MessageService],
 })

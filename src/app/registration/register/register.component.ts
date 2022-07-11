@@ -47,7 +47,7 @@ export class RegisterComponent implements OnInit {
 
   getFormControll(fieldName: string) {
     return this.registerForm.controls[fieldName];
-
+// REMOVE THIS
   }
 
   onSubmit(): void {

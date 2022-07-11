@@ -11,6 +11,7 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
     this.primengConfig.ripple = true;
+    // CHECK
   }
 
 }

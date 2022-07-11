@@ -3,14 +3,14 @@
 }
 
 .sidebar {
-    border: .0625rem solid
+    border: .01rem solid wheat;
 }
 
 .profile {
     margin-left: 3.75rem;
     align-items: right;
     width: 100%;
-    margin-top: 1.5625rem;
+    margin-top: 1.5rem;
 }
 
 .header {
@@ -23,10 +23,10 @@
     font-family: Roboto;
     font-size: 2.5rem;
     font-weight: 400;
-    line-height: 2.9375rem;
+    line-height: 2.9rem;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 3.4375rem;
+    margin-left: 3.4rem;
 }
 
 .icons {
@@ -35,7 +35,7 @@
 
 .icons .bell {
     margin-right: 1.25rem;
-    margin-top: .625rem;
+    margin-top: .6rem;
 }
 
 .icons .imageicon {
@@ -43,19 +43,19 @@
 }
 
 .body {
-    height: 36.375rem;
-    width: 76.0625rem;
+    height: 36.4rem;
+    width: 76.1rem;
     left: 21.5rem;
     top: 8.75rem;
     border-radius: .25rem;
-    border: .0625rem solid;
-    margin-left: 7.8125rem;
-    margin-top: 1.875rem;
+    border: .1rem solid;
+    margin-left: 7.8rem;
+    margin-top: 1.8rem;
 }
 
 .editprofile {
-    margin-top: 1.0625rem;
-    margin-left: 1.875rem;
+    margin-top: 1.06rem;
+    margin-left: 1.8rem;
     font-size: 1.25rem;
 }
 
@@ -63,7 +63,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: .875rem;
+    font-size: .9rem;
 }
 
 .profileimage {
@@ -75,8 +75,8 @@
 .fields {
     justify-content: center;
     align-items: center;
-    margin-right: 16.875rem;
-    margin-left: 16.875rem;
+    margin-right: 16.8rem;
+    margin-left: 16.8rem;
 }
 
 .fieldname {
@@ -85,76 +85,76 @@
 }
 
 .input-box .label {
-    width: 4.4375rem;
+    width: 4.4rem;
     left: 36rem;
-    top: 22.8125rem;
+    top: 22.8rem;
 }
 
 .input-box .p-invalid {
-    height: 3.4375rem;
-    width: 18.75rem;
+    height: 3.4rem;
+    width: 18.7rem;
     left: 36rem;
-    top: 24.625rem;
-    border-radius: .125rem;
+    top: 24.6rem;
+    border-radius: .15rem;
     display: block;
     color: grey;
 }
 
 .email {
-    height: 3.4375rem;
+    height: 3.4rem;
     left: 36rem;
-    top: 23.125rem;
-    border-radius: .125rem;
+    top: 23.1rem;
+    border-radius: .12em;
     display: block;
     margin-top: 2.5rem;
 }
 
 .emailid {
-    height: 3.4375rem;
+    height: 3.4rem;
     width: 42.5rem;
     left: 36rem;
     top: 31.5rem;
-    border-radius: .125rem;
+    border-radius: .12rem;
 }
 
 .mobilenumber {
-    width: 18.75rem;
+    width: 18.7rem;
     left: 36rem;
-    top: 24.625rem;
-    border-radius: .125rem;
+    top: 24.6rem;
+    border-radius: .12rem;
     display: block;
 }
 
 .fieldnumber {
-    margin-top: 3.4375rem;
+    margin-top: 3.5rem;
     display: flex;
     justify-content: space-between;
 }
 
 .inputnumber .number {
-    height: 3.4375rem;
-    width: 18.75rem;
+    height: 3.4rem;
+    width: 18.7rem;
     left: 36rem;
-    top: 24.625rem;
-    border-radius: .125rem;
+    top: 24.6rem;
+    border-radius: .12rem;
     display: block;
 }
 
 .inputnumber .input {
-    height: 3.4375rem;
+    height: 3.45rem;
     width: 18.75rem;
     left: 61rem;
-    top: 38.375rem;
-    border-radius: .125rem;
+    top: 38.37rem;
+    border-radius: .12rem;
 }
 
 :host ::ng-deep .button .submit {
-    height: 2.625rem;
+    height: 2.6rem;
     width: 11rem;
     align-items: right;
     justify-content: right;
     display: flex;
-    margin-top: 1.875rem;
-    margin-left: 73.125rem;
+    margin-top: 2rem;
+    margin-left: 73.1rem;
     color: #fff;
 }

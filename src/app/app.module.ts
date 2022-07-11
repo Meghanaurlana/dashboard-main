@@ -14,7 +14,6 @@ import { ToastrModule } from 'ngx-toastr';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { RegistrationModule } from './registration/registration.module';
-
 import { DashBoardModule } from './dash-board/dash-board.module';
 
 
@@ -42,8 +41,7 @@ import { DashBoardModule } from './dash-board/dash-board.module';
     ToastrModule.forRoot(),
     ToastModule,
     RegistrationModule,
- 
-    DashBoardModule
+     DashBoardModule
 
   ],
 
