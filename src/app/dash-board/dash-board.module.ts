@@ -21,6 +21,9 @@ import { TableModule } from 'primeng/table';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CalendarModule } from 'primeng/calendar';
 import { DividerModule } from 'primeng/divider';
+import {AvatarModule} from 'primeng/avatar';
+import {AvatarGroupModule} from 'primeng/avatargroup';
+
 
 @NgModule({
   declarations: [
@@ -48,6 +51,8 @@ import { DividerModule } from 'primeng/divider';
     CheckboxModule,
     CalendarModule,
     DividerModule,
+    AvatarModule,
+    AvatarGroupModule
   ],
   providers: [MessageService],
 })

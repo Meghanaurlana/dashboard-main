@@ -14,7 +14,7 @@ export class DashboardComponent implements OnInit {
 
   constructor(
     private messageService: MessageService //  private configService: AppConfigService
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.basicData = {
@@ -34,27 +34,15 @@ export class DashboardComponent implements OnInit {
   }
 
 
-  // oncardclick(){
-  //   this.basicData = {
-  //     labels: ['1', '2', '3', '4', '5', '6', '7'],
-  //     datasets: [
-  //       {
-  //         label: 'First Dataset',
-  //         data: [65, 99, 80, 91, 56, 55, 40],
-  //         fill: false,
-  //         borderColor: '#42A5F5',
-  //         tension: 0.4,
-  //       },
-  //     ],
-  //   };
 
-  oncardclick(i:number){
+
+  oncardclick(i: number) {
     this.basicData = {
       labels: ['1', '2', '3', '4', '5', '6', '7'],
       datasets: [
         {
           label: 'First Dataset',
-          data: [65 * i , 59 + i , 80 / i , 91 - i , 56 + i, 55 * i, 40 - i],
+          data: [65 * i, 59 + i, 80 / i, 91 - i, 56 + i, 55 * i, 40 - i],
           fill: false,
           borderColor: '#42A5F5',
           tension: 0.4,
@@ -67,37 +55,29 @@ export class DashboardComponent implements OnInit {
 
 export interface Product {
   Name?: string;
-  EmailAddress?: string;
-  PhoneNumber?: number;
-  DateCreated?: string;
-  PincodeAddress?: number;
+  label?:string;
+
 }
 
 
 const tableData = [
   {
     Name: 'Robert Hilington',
-    EmailAddress: 'robert12@gmail.com',
-    PhoneNumber: 123 - 456 - 7890,
-    DateCreated: '21 Dec 2020',
+    label:'RH'
+
   },
   {
     Name: 'Thomas H',
-    EmailAddress: 'robert12@gmail.com',
-    PhoneNumber: 123 - 456 - 7890,
-    DateCreated: '21 Dec 2020',
+    label:'TH'
   },
   {
     Name: 'Robert Hilington',
-    EmailAddress: 'thomas.h@yahoo.com',
-    PhoneNumber: 123 - 456 - 7890,
-    DateCreated: '21 Dec 2020',
+    label:'RH'
+
   },
   {
     Name: 'Robert C ',
-    EmailAddress: 'crobert23@gmail.com',
-    PhoneNumber: 123 - 456 - 7890,
-    DateCreated: '21 Dec 2020',
+    label:'RC'
   },
 ];
 

@@ -1,10 +1,11 @@
 .sidenav {
   height: 59.25rem;
-  width: 15.9375rem;
+  width: 15.375rem;
   left: 2rem;
   top: 0rem;
   border-radius: 0rem;
   margin-top: 1.5625rem;
+  margin-left: 2rem;
 }
 
 .title {
@@ -14,7 +15,7 @@
   line-height: 2.9375rem;
   letter-spacing: 0em;
   text-align: left;
-  margin-left: .625rem;
+  left: -0.375rem;
   color: #0A376E;
 }
 
@@ -23,10 +24,11 @@
   padding-left: 3.125rem;
 }
 
-.list a{
+.list a {
   color: #000000;
- 
+
 }
+
 .dashboard,
 .users,
 .profile,
@@ -49,8 +51,6 @@
   top: 0rem;
   border-radius: 3.125rem;
   padding: .5rem, .75rem, .5rem, .75rem;
-
-
 }
 
 .dashboard :hover {
@@ -75,5 +75,4 @@
 
 .list span {
   margin-left: 1.25rem;
-
 }
