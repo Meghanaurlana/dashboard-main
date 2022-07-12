@@ -46,7 +46,7 @@ export class DashboardComponent implements OnInit {
       ],
     };
   }
-  onseemoreclick(){
+  onseemoreclick() {
 
     this.products = [
       {
