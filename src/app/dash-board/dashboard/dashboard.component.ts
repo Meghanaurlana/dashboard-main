@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Ticks } from 'chart.js';
 import { MessageService } from 'primeng/api';
 
 @Component({
@@ -13,7 +12,7 @@ export class DashboardComponent implements OnInit {
   products: Product[] = [];
 
   constructor(
-    private messageService: MessageService //  private configService: AppConfigService
+    private messageService: MessageService
   ) { }
 
   ngOnInit() {
@@ -29,7 +28,6 @@ export class DashboardComponent implements OnInit {
         },
       ],
     };
-
     this.products = tableData;
   }
 
@@ -50,13 +48,11 @@ export class DashboardComponent implements OnInit {
   }
 }
 
-
 export interface Product {
   Name?: string;
   label?: string;
 
 }
-
 
 const tableData = [
   {
