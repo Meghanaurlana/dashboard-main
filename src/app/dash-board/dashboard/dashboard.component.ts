@@ -6,6 +6,7 @@ import { MessageService } from 'primeng/api';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss'],
 })
+
 export class DashboardComponent implements OnInit {
   basicData: any;
   basicOptions: any;
@@ -44,14 +45,49 @@ export class DashboardComponent implements OnInit {
         },
       ],
     };
+  }
+  onseemoreclick(){
 
+    this.products = [
+      {
+        Name: 'Robert Hilington',
+        label: 'RH'
+      },
+      {
+        Name: 'Thomas H',
+        label: 'TH'
+      },
+      {
+        Name: 'Robert Hilington',
+        label: 'RH'
+      },
+      {
+        Name: 'Robert C ',
+        label: 'RC'
+      },
+      {
+        Name: 'Robert Hilington',
+        label: 'RH'
+      },
+      {
+        Name: 'Thomas H',
+        label: 'TH'
+      },
+      {
+        Name: 'Robert Hilington',
+        label: 'RH'
+      },
+      {
+        Name: 'Robert C ',
+        label: 'RC'
+      },
+    ];
   }
 }
 
 export interface Product {
   Name?: string;
   label?: string;
-
 }
 
 const tableData = [
