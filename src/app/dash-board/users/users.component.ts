@@ -12,81 +12,88 @@ export class UsersComponent implements OnInit {
   ngOnInit(): void {
     this.products = tableData;
   }
-
 }
-
 
 export interface Product {
 
   Name?: string;
   EmailAddress?: string;
-  PhoneNumber?: number;
+  PhoneNumber?: string;
   DateCreated?: string;
-  PincodeAddress?: number;
+  PincodeAddress?: string;
 }
 
 const tableData = [
   {
     "Name": "Robert Hilington",
     "EmailAddress": "robert12@gmail.com",
-    "PhoneNumber": 123-456-7890,
-    "DateCreated":"21 Dec 2020",
+    "PhoneNumber": "123-456-7890",
+    "DateCreated": "21 Dec 2020",
+    "PincodeAddress": "000189"
   },
   {
     "Name": "Thomas H",
-    "EmailAddress": "robert12@gmail.com",
-    "PhoneNumber": 123-456-7890,
-    "DateCreated":"21 Dec 2020",
+    "EmailAddress": "thomas.h@yahoo.com",
+    "PhoneNumber": "123-456-7890",
+    "DateCreated": "21 Dec 2020",
+    "PincodeAddress": "000189"
   },
   {
     "Name": "Robert Hilington",
-    "EmailAddress": "thomas.h@yahoo.com",
-    "PhoneNumber": 123-456-7890,
-    "DateCreated":"21 Dec 2020",
+    "EmailAddress": "robert12@gmail.com",
+    "PhoneNumber": "123-456-7890",
+    "DateCreated": "21 Dec 2020",
+    "PincodeAddress": "  000189"
   },
   {
     "Name": "Robert C",
     "EmailAddress": "crobert23@gmail.com",
-    "PhoneNumber": 123-456-7890,
-    "DateCreated":"21 Dec 2020",
+    "PhoneNumber": "123-456-7890",
+    "DateCreated": "21 Dec 2020",
+    "PincodeAddress": "000189"
   },
   {
     "Name": "Robert Hilington",
     "EmailAddress": "robert12@gmail.com",
-    "PhoneNumber": 123-456-7890,
-    "DateCreated":"21 Dec 2020",
+    "PhoneNumber": "123-456-7890",
+    "DateCreated": "21 Dec 2020",
+    "PincodeAddress": "000189"
   },
   {
     "Name": "Robert Hilington",
     "EmailAddress": "robert12@gmail.com",
-    "PhoneNumber": 123-456-7890,
-    "DateCreated":"21 Dec 2020",
+    "PhoneNumber": "123-456-7890",
+    "DateCreated": "21 Dec 2020",
+    "PincodeAddress": "000189"
   },
   {
     "Name": "Robert Hilington",
     "EmailAddress": "robert12@gmail.com",
-    "PhoneNumber": 123-456-7890,
-    "DateCreated":"21 Dec 2020",
+    "PhoneNumber": "123-456-7890",
+    "DateCreated": "21 Dec 2020",
+    "PincodeAddress": "000189"
   },
   {
     "Name": "Robert Hilington",
     "EmailAddress": "robert12@gmail.com",
-    "PhoneNumber": 123-456-7890,
-    "DateCreated":"21 Dec 2020",
+    "PhoneNumber": "123-456-7890",
+    "DateCreated": "21 Dec 2020",
+    "PincodeAddress": "000189"
   },
   {
     "Name": "Robert Hilington",
     "EmailAddress": "robert12@gmail.com",
-    "PhoneNumber": 123-456-7890,
-    "DateCreated":"21 Dec 2020",
+    "PhoneNumber": "123-456-7890",
+    "DateCreated": "21 Dec 2020",
+    "PincodeAddress": "000189"
   },
   {
     "Name": "Robert Hilington",
     "EmailAddress": "robert12@gmail.com",
-    "PhoneNumber": 123-456-7890,
-    "DateCreated":"21 Dec 2020",
+    "PhoneNumber": "123-456-7890",
+    "DateCreated": "21 Dec 2020",
+    "PincodeAddress": "000189"
   }
-
 
 ]
 

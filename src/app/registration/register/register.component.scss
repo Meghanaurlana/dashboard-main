@@ -1,6 +1,6 @@
-*{
+* {
     font-family: 'Roboto';
-font-style: normal;
+    font-style: normal;
 }
 
 .body {
@@ -14,7 +14,6 @@ font-style: normal;
 }
 
 .container {
-    // max-width: 43.75rem;
     width: 800px;
     background-color: transparent;
     padding: 1.5rem 1.8rem;
@@ -45,12 +44,12 @@ font-style: normal;
 }
 
 form .user-details {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
-form .user-details .input-box {   
+form .user-details .input-box {
     margin: .9rem;
     height: 4rem;
 }
@@ -72,7 +71,7 @@ form label {
     font-size: 1rem;
     border-radius: .3rem;
     padding-left: .9rem;
-    border:  solid #ccc;
+    border: solid #ccc;
     border-bottom-width: .1rem;
     transition: all 0.3s ease;
     background: transparent;
@@ -81,7 +80,7 @@ form label {
 }
 
 ::-webkit-input-placeholder {
-    color:grey;
+    color: grey;
 }
 
 .user-details .input-box input:focus,
@@ -89,10 +88,10 @@ form label {
     background: transparent;
 }
 
-:host ::ng-deep p-radioButton{
+:host ::ng-deep p-radioButton {
     display: inline-block;
     cursor: pointer;
-    margin-right: .9rem;  
+    margin-right: .9rem;
 }
 
 form .button {
