@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { MessageService } from 'primeng/api';
-import { ToastModule } from 'primeng/toast';
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -27,7 +27,7 @@ export class RegisterComponent implements OnInit {
       emailAddress: new FormControl('', [
         Validators.required,
         Validators.email,
-        // Validators.pattern('[a-z 0-9]+[a-z]+\.[a-z]{2,3}')
+
       ]),
       password: new FormControl('', [
         Validators.required,
@@ -45,27 +45,18 @@ export class RegisterComponent implements OnInit {
   }
 
 
-  getFormControll(fieldName: string) {
-    return this.registerForm.controls[fieldName];
-// REMOVE THIS
-  }
 
   onSubmit(): void {
     this.registerForm.markAllAsTouched();
 
-    if (this.registerForm.invalid || this.getFormControll("password").value != this.getFormControll("confirmPassword").value) {
+    if (this.registerForm.invalid || this.registerForm.controls['password'].value != this.registerForm.controls['confirmPassword'].value) {
       return this.messageService.add({ severity: 'error', summary: 'please fill required fields', detail: 'please fill required fields' });
-    } else if (!this.getFormControll('privacypolicy').value) {
+    } else if (!this.registerForm.controls['privacypolicy'].value) {
       return this.messageService.add({ severity: 'error', summary: 'please agree to terms and conditions', detail: 'please agree to terms and conditions' });
     } console.log(this.registerForm.value);
     return this.messageService.add({ severity: 'success', summary: 'Success', detail: 'registeredy' });
 
   }
-
-  // register(){
-  //   this.router.navigate(['login'],{relativeTo: this.route})
-  // }
-
 }
 
 

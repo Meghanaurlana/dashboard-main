@@ -7,6 +7,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes=[
+ 
+  { path: "" ,component: DashboardComponent},
+
   {
     path: "dash-board", children: [
       { path: "dashboard", component: DashboardComponent },

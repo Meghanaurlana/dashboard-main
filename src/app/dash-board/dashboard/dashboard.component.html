@@ -8,14 +8,15 @@
         <div class="header">
             <div class="title">
                 <h1>Dashboard</h1>
-                <!-- HEADER -->
+           
             </div>
             <div class="icons">
                 <div class="bell"> <i class="pi pi-bell" style="font-size: 1.5rem"></i></div>
 
                 <p-divider layout="vertical">
                 </p-divider>
-                <div class="imageicon"> <img src="/assets/images/imageicon.jpg"></div>
+                <div class="imageicon"><a routerLink="/dash-board/profile"> <img src="/assets/images/imageicon.jpg">
+                    </a></div>
             </div>
         </div>
 
@@ -24,34 +25,34 @@
             <div class="cards">
                 <p-card [style]="{'width': '12.5rem', 'margin-bottom': '2em'}" (click)="oncardclick(1.2)">
                     <span>2,223,214</span>
-                    <label>total view</label>
+                    <label>Total View</label>
                 </p-card>
             </div>
-            <p-divider layout="vertical">
 
-            </p-divider>
+            <p-divider layout="vertical"></p-divider>
+
             <div class="cards">
                 <p-card [style]="{'width': '12.5rem', 'margin-bottom': '2em'}" (click)="oncardclick(2.5)">
                     <span>1,312,022</span>
-                    <label>total Download</label>
+                    <label>Total Download</label>
                 </p-card>
             </div>
-            <p-divider layout="vertical">
 
-            </p-divider>
+            <p-divider layout="vertical"></p-divider>
+
             <div class="cards">
                 <p-card [style]="{'width': '12.5rem', 'margin-bottom': '2em'}" (click)="oncardclick(1.8)">
                     <span>1,959,453</span>
-                    <label>total read</label>
+                    <label>Total Read</label>
                 </p-card>
             </div>
-            <p-divider layout="vertical">
 
-            </p-divider>
+            <p-divider layout="vertical"></p-divider>
+
             <div class="cards">
                 <p-card [style]="{'width': '12.5rem', 'margin-bottom': '2em'}" (click)="oncardclick(3.1)">
                     <span>234,032</span>
-                    <label>total Comments</label>
+                    <label>Total Comments</label>
                 </p-card>
             </div>
 
@@ -76,7 +77,7 @@
                 <span>Users</span>
             </div>
             <div class="seemore">
-                <span >See More</span>
+                <span>See More</span>
             </div>
         </div>
         <hr>

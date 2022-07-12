@@ -148,13 +148,26 @@
     border-radius: .12rem;
 }
 
-:host ::ng-deep .button .submit {
+:host ::ng-deep button {
     height: 2.6rem;
     width: 11rem;
-    align-items: right;
+    align-items: center;
     justify-content: right;
     display: flex;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 73.1rem;
     color: #fff;
+    background-color: #0AA6FE;
+    font-size: 1.1rem;
+    letter-spacing: .06rem;
+    cursor: pointer;
+    background: #0AA6FE;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 1.1rem;
+    font-weight: 100;
+    line-height: 1.3rem;
+    letter-spacing: 0.01em;
+    text-align: center;
+
 }

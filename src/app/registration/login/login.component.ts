@@ -38,16 +38,9 @@ export class LoginComponent implements OnInit {
     )
   }
 
-  getFormControll(fieldName: string) {
-    return this.loginForm.controls[fieldName];
-
-  }
   onSubmit() {
     this.loginForm.markAllAsTouched();
-    // this.toastr.success("login success");
-
-    // window.localStorage.setItem("KEY", "VALUE");
-    // window.localStorage.getItem("KEY");
+    
     if (this.loginForm.valid) {
       this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Message Content' });
       console.log(this.loginForm.value);
