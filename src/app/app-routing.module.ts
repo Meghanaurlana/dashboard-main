@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+import { RegistrationRoutingModule } from './registration/registration-routing.module';
+import { DashBoardRoutingModule } from './dash-board/dash-board-routing.module';
 
 
 const routes: Routes = [
@@ -17,11 +18,11 @@ const routes: Routes = [
   
   {  
     path: 'registration',  
-    loadChildren: () => import('./registration/registration.module').then(m => m.RegistrationModule)  
+    loadChildren: () => import('./registration/registration-routing.module').then(m => m.RegistrationRoutingModule)  
   }  ,
   {  
     path: 'dash-board',  
-    loadChildren: () => import('./dash-board/dash-board.module').then(m => m.DashBoardModule)  
+    loadChildren: () => import('./dash-board/dash-board-routing.module').then(m => m.DashBoardRoutingModule)  
   }  ,
   
   
