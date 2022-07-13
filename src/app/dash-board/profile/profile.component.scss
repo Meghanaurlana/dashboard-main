@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
 
-.title  h1{
+.title h1 {
     font-family: Roboto;
     font-size: 2.5rem;
     font-weight: 400;
@@ -95,28 +95,17 @@
     top: 22.8rem;
 }
 
-
-form .user-details .input-box {
-    margin: .9rem;
-    height: 4rem;
-}
-
-form .input-box small {
-    display: block;
-    font-weight: 500;
-    margin-top: .3rem;
-}
 .input-box input {
     height: 3.4rem;
     width: 18.7rem;
     left: 36rem;
     top: 24.6rem;
     border-radius: .15rem;
-    // display: block;
+    display: block;
     color: grey;
 }
 
-.p-field-email{
+.p-field-email {
     height: 3.4rem;
     left: 36rem;
     top: 23.1rem;
@@ -125,7 +114,7 @@ form .input-box small {
     margin-top: 2.5rem;
 }
 
-.p-field-email input{
+.p-field-email input {
     height: 3.4rem;
     width: 44rem;
     left: 36rem;
@@ -156,7 +145,7 @@ form .input-box small {
     display: block;
 }
 
-.fieldnumber input{
+.fieldnumber input {
     height: 3.45rem;
     width: 18.75rem;
     left: 61rem;

@@ -57,7 +57,7 @@
                             Password is
                             required</small>
                         <small class="p-invalid text-danger"
-                            *ngIf=" !(this.registerForm.controls['confirmPassword'].value === this.registerForm.controls['confirmPassword'].value)">Password
+                            *ngIf="!(this.registerForm.controls['confirmPassword'].value == this.registerForm.controls['password'].value)">Password
                             mismatch</small>
                     </div>
                 </div>

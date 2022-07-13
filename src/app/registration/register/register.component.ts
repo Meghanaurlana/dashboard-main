@@ -54,7 +54,7 @@ export class RegisterComponent implements OnInit {
     } else if (!this.registerForm.controls['privacypolicy'].value) {
       return this.messageService.add({ severity: 'error', summary: 'please agree to terms and conditions', detail: 'please agree to terms and conditions' });
     } console.log(this.registerForm.value);
-    return this.messageService.add({ severity: 'success', summary: 'Success', detail: 'registeredy' });
+    return this.messageService.add({ severity: 'success', summary: 'Success', detail: 'registered' });
 
   }
 }

@@ -28,19 +28,17 @@
                 <h4>john marshall</h4>
             </div>
             <div class="fields">
-                <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                <form [formGroup]="profileForm" (ngSubmit)="onsubmit()">
                     <div class="fieldname">
-
                         <div class="p-field input-box">
-
                             <label for="firstName">First Name</label>
                             <input id="firstName" type="text" formControlName="firstName" class="p-invalid"
                                 [ngClass]="{'border-danger': this.profileForm.controls['firstName'].touched && this.profileForm.controls['firstName'].invalid}"
                                 placeholder="John" pInputText />
-                            <p class="p-invalid text-danger"
+                            <small class="p-invalid text-danger"
                                 *ngIf="this.profileForm.controls['firstName'].touched && this.profileForm.controls['firstName'].invalid">
                                 Username
-                                is not available.</p>
+                                is not available.</small>
                         </div>
 
                         <div class="p-field input-box">
@@ -78,11 +76,9 @@
                     </div>
                 </form>
             </div>
-        </div>
-        <p-toast></p-toast>
-
+        </div>  
         <div class="button">
-            <p-button type="submit" label="save" styleClass="p-button"></p-button>
+            <p-button type="submit" label="Save" styleClass="p-button"></p-button>
         </div>
 
     </div>

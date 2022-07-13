@@ -26,7 +26,6 @@ import {AvatarGroupModule} from 'primeng/avatargroup';
 import { DashBoardRoutingModule } from './dash-board-routing.module';
 
 
-
 @NgModule({
   declarations: [
     DashboardComponent,
