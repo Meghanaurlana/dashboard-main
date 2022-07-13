@@ -11,7 +11,8 @@ export class DashboardComponent implements OnInit {
   basicData: any;
   basicOptions: any;
   products: Product[] = [];
-
+  seeMore:boolean = true
+  visible:boolean = false
   constructor(
     private messageService: MessageService
   ) { }
@@ -46,43 +47,12 @@ export class DashboardComponent implements OnInit {
       ],
     };
   }
-  onseemoreclick() {
-
-    this.products = [
-      {
-        Name: 'Robert Hilington',
-        label: 'RH'
-      },
-      {
-        Name: 'Thomas H',
-        label: 'TH'
-      },
-      {
-        Name: 'Robert Hilington',
-        label: 'RH'
-      },
-      {
-        Name: 'Robert C ',
-        label: 'RC'
-      },
-      {
-        Name: 'Robert Hilington',
-        label: 'RH'
-      },
-      {
-        Name: 'Thomas H',
-        label: 'TH'
-      },
-      {
-        Name: 'Robert Hilington',
-        label: 'RH'
-      },
-      {
-        Name: 'Robert C ',
-        label: 'RC'
-      },
-    ];
+  onseemoreclick()
+  {
+    this.seeMore = !this.seeMore; //not equal to condition
+    this.visible = !this.visible
   }
+
 }
 
 export interface Product {
