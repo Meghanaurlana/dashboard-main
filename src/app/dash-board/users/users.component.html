@@ -6,17 +6,19 @@
 
     <div class="users">
         <div class="header">
-        <div class="title"><span>Users list</span> </div>
-        <div class="icons">
-            <div class="bell"> <i class="pi pi-bell" style="font-size: 1.5rem"></i></div>
- 
-            <p-divider layout="vertical">
-            </p-divider>
-            <div class="imageicon"> <a  routerLink="/dash-board/profile"> <img src="/assets/images/imageicon.jpg" > </a></div>
+            <div class="title"><span>Users list</span> </div>
+            <div class="icons">
+                <div class="bell"> <i class="pi pi-bell" style="font-size: 1.5rem"></i></div>
+
+                <p-divider layout="vertical">
+                </p-divider>
+                <div class="imageicon"> <a routerLink="/dash-board/profile"> <img src="/assets/images/imageicon.jpg">
+                    </a></div>
+            </div>
         </div>
-    </div>
         <div class="table">
-            <p-table [value]="products" responsiveLayout="scroll">
+            
+            <p-table  [value]="products" [paginator]="true" [rows]="10" [showCurrentPageReport]="true" responsiveLayout="scroll">
                 <ng-template pTemplate="header">
                     <tr>
                         <th>
@@ -34,7 +36,8 @@
 
                     <tr>
                         <td>
-                            <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                            <p-tableCheckbox [value]="product"></p-tableCheckbox>
+
                         </td>
                         <td>{{product.Name}}</td>
                         <td>{{product.EmailAddress}}</td>
@@ -43,6 +46,13 @@
                         <td>{{product.PincodeAddress}}</td>
                     </tr>
                 </ng-template>
+                
+                <!-- <ng-template pTemplate="paginatorleft">
+                    <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+                </ng-template>
+                <ng-template pTemplate="paginatorright">
+                    <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+                </ng-template> -->
             </p-table>
 
         </div>

@@ -95,17 +95,28 @@
     top: 22.8rem;
 }
 
-.input-box .p-invalid {
+
+form .user-details .input-box {
+    margin: .9rem;
+    height: 4rem;
+}
+
+form .input-box small {
+    display: block;
+    font-weight: 500;
+    margin-top: .3rem;
+}
+.input-box input {
     height: 3.4rem;
     width: 18.7rem;
     left: 36rem;
     top: 24.6rem;
     border-radius: .15rem;
-    display: block;
+    // display: block;
     color: grey;
 }
 
-.email {
+.p-field-email{
     height: 3.4rem;
     left: 36rem;
     top: 23.1rem;
@@ -114,7 +125,7 @@
     margin-top: 2.5rem;
 }
 
-.emailid {
+.p-field-email input{
     height: 3.4rem;
     width: 44rem;
     left: 36rem;
@@ -136,7 +147,7 @@
     justify-content: space-between;
 }
 
-.inputnumber .number {
+.fieldnumber input {
     height: 3.4rem;
     width: 18.7rem;
     left: 36rem;
@@ -145,7 +156,7 @@
     display: block;
 }
 
-.inputnumber .input {
+.fieldnumber input{
     height: 3.45rem;
     width: 18.75rem;
     left: 61rem;

@@ -28,44 +28,61 @@
                 <h4>john marshall</h4>
             </div>
             <div class="fields">
+                <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                    <div class="fieldname">
 
-                <div class="fieldname">
+                        <div class="p-field input-box">
 
-                    <div class="input-box">
-                        <label for="firstName">First Name</label>
-                        <input id="firstName" type="text" class="p-invalid" placeholder="John">
+                            <label for="firstName">First Name</label>
+                            <input id="firstName" type="text" formControlName="firstName" class="p-invalid"
+                                [ngClass]="{'border-danger': this.profileForm.controls['firstName'].touched && this.profileForm.controls['firstName'].invalid}"
+                                placeholder="John" pInputText />
+                            <p class="p-invalid text-danger"
+                                *ngIf="this.profileForm.controls['firstName'].touched && this.profileForm.controls['firstName'].invalid">
+                                Username
+                                is not available.</p>
+                        </div>
+
+                        <div class="p-field input-box">
+                            <label for="lastName">Last Name</label>
+                            <input id="lastName" type="text" formControlName="lastName" class="p-invalid"
+                                placeholder="marshall" pInputText />
+                        </div>
+
                     </div>
 
-                    <div class=" input-box">
-                        <label for="lastName">Last Name</label>
-                        <input id="lastName" type="text" class="p-invalid" placeholder="marshall">
+                    <div class="p-field-email">
+                        <label for="emailAddress">Email Address</label>
+                        <input id="emailAddress" type="email" formControlName="emailAddress" class="p-invalid"
+                            [ngClass]="{'border-danger': this.profileForm.controls['emailAddress'].touched && this.profileForm.controls['firstName'].invalid}"
+                            placeholder="John.marshall@gmail.com" pInputText />
+                        <span class="p-invalid text-danger"
+                            *ngIf=" this.profileForm.controls['emailAddress'].touched &&  this.profileForm.controls['emailAddress'].invalid">Vaild
+                            Email Address is
+                            required</span>
                     </div>
 
-                </div>
+                    <div class="fieldnumber">
 
-                <div class="email">
-                    <label for="email"> Email Address</label>
-                    <input id="email" type="email" class="emailid" placeholder="john.marshall@gmail.com" />
-                </div>
+                        <div class="p-field input-box">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input id="phoneNumber" type="number" formControlName="phoneNumber" placeholder="9876543210"
+                                pInputText />
+                        </div>
+                        <div class="p-field input-box">
+                            <label for="pincode">pincode</label>
+                            <input id="pincode" type="number" formControlName="pincode" placeholder="9876543210"
+                                pInputText />
+                        </div>
 
-                <div class="fieldnumber">
-
-                    <div class="inputnumber">
-                        <label for="phoneNumber">Mobile Number</label>
-                        <input id="phoneNumber" class="number" type="number" placeholder="+1(415)4567890">
                     </div>
-
-                    <div class="inputnumber">
-                        <label for="pincode">Pincode </label>
-                        <input class="number" type="number" placeholder="0001895" />
-                    </div>
-
-                </div>
+                </form>
             </div>
         </div>
+        <p-toast></p-toast>
 
         <div class="button">
-            <p-button class="submit" label="Save"></p-button>
+            <p-button type="submit" label="save" styleClass="p-button"></p-button>
         </div>
 
     </div>

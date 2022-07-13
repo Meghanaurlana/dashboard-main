@@ -1,15 +1,15 @@
 <div class="body">
     <div class="container">
-        <h1 class="title">Imaginnovate</h1>     
-       
+        <h1 class="title">Imaginnovate</h1>
+
         <h2 class="desc">Register your account</h2>
-              
+
         <div class="content">
-            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" >
-              
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
                 <div class="user-details">
                     <div class="p-field input-box">
-                    
+
                         <label for="firstName">First Name</label>
                         <input id="firstName" type="text" formControlName="firstName" class="p-invalid"
                             [ngClass]="{'border-danger': this.registerForm.controls['firstName'].touched && this.registerForm.controls['firstName'].invalid}"
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="terms">
-                    <p-radioButton formControlName="privacypolicy" value="true"  id="radio" ></p-radioButton>
+                    <p-radioButton formControlName="privacypolicy" value="true" id="radio"></p-radioButton>
                     <label for="btn">I agree to Terms & Privacy Policy</label>
                     <div>
                         <small id="radio" class="p-invalid text-danger"
@@ -74,7 +74,7 @@
 
                 <div class="button">
                     <p-toast></p-toast>
-                  
+
                     <p-button type="submit" label="Create Account" styleClass="p-button"></p-button>
                 </div>
                 <div class="account">
