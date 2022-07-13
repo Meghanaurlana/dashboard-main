@@ -11,8 +11,8 @@ export class DashboardComponent implements OnInit {
   basicData: any;
   basicOptions: any;
   products: Product[] = [];
-  seeMore:boolean = true
-  visible:boolean = false
+  seeMore: boolean = true
+  visible: boolean = false
   constructor(
     private messageService: MessageService
   ) { }
@@ -30,7 +30,7 @@ export class DashboardComponent implements OnInit {
         },
       ],
     };
-    this.products = tableData;
+    this.products = tableData.slice(0, 5);
   }
 
   oncardclick(i: number) {
@@ -47,10 +47,14 @@ export class DashboardComponent implements OnInit {
       ],
     };
   }
-  onseemoreclick()
-  {
+  onseemoreclick() {
     this.seeMore = !this.seeMore; //not equal to condition
-    this.visible = !this.visible
+    if (!this.seeMore) {
+      this.products = tableData.slice(0, 12);
+    } else {
+      this.products = tableData.slice(0, 5);
+
+    }
   }
 
 }
@@ -62,6 +66,96 @@ export interface Product {
 
 const tableData = [
   {
+    Name: 'Robert Hilington',
+    label: 'RH'
+  },
+  {
+    Name: 'Thomas H',
+    label: 'TH'
+  },
+  {
+    Name: 'Robert Hilington',
+    label: 'RH'
+  },
+  {
+    Name: 'Robert C ',
+    label: 'RC'
+  }, {
+    Name: 'Robert Hilington',
+    label: 'RH'
+  },
+  {
+    Name: 'Thomas H',
+    label: 'TH'
+  },
+  {
+    Name: 'Robert Hilington',
+    label: 'RH'
+  },
+  {
+    Name: 'Robert C ',
+    label: 'RC'
+  }, {
+    Name: 'Robert Hilington',
+    label: 'RH'
+  },
+  {
+    Name: 'Thomas H',
+    label: 'TH'
+  },
+  {
+    Name: 'Robert Hilington',
+    label: 'RH'
+  },
+  {
+    Name: 'Robert C ',
+    label: 'RC'
+  }, {
+    Name: 'Robert Hilington',
+    label: 'RH'
+  },
+  {
+    Name: 'Thomas H',
+    label: 'TH'
+  },
+  {
+    Name: 'Robert Hilington',
+    label: 'RH'
+  },
+  {
+    Name: 'Robert C ',
+    label: 'RC'
+  }, {
+    Name: 'Robert Hilington',
+    label: 'RH'
+  },
+  {
+    Name: 'Thomas H',
+    label: 'TH'
+  },
+  {
+    Name: 'Robert Hilington',
+    label: 'RH'
+  },
+  {
+    Name: 'Robert C ',
+    label: 'RC'
+  }, {
+    Name: 'Robert Hilington',
+    label: 'RH'
+  },
+  {
+    Name: 'Thomas H',
+    label: 'TH'
+  },
+  {
+    Name: 'Robert Hilington',
+    label: 'RH'
+  },
+  {
+    Name: 'Robert C ',
+    label: 'RC'
+  }, {
     Name: 'Robert Hilington',
     label: 'RH'
   },

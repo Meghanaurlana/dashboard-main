@@ -18,6 +18,7 @@
         </div>
 
         <div class="body">
+            <form [formGroup]="profileForm" (ngSubmit)="onsubmit()">
             <div class="editprofile">
                 <span> Edit profile</span>
             </div>
@@ -28,7 +29,7 @@
                 <h4>john marshall</h4>
             </div>
             <div class="fields">
-                <form [formGroup]="profileForm" (ngSubmit)="onsubmit()">
+               
                     <div class="fieldname">
                         <div class="p-field input-box">
                             <label for="firstName">First Name</label>
@@ -43,8 +44,7 @@
 
                         <div class="p-field input-box">
                             <label for="lastName">Last Name</label>
-                            <input id="lastName" type="text" formControlName="lastName" class="p-invalid"
-                                placeholder="marshall" pInputText />
+                            <input id="lastName" type="text" formControlName="lastName" class="p-invalid" placeholder="marshall" pInputText />
                         </div>
 
                     </div>
@@ -64,22 +64,23 @@
 
                         <div class="p-field input-box">
                             <label for="phoneNumber">Phone Number</label>
-                            <input id="phoneNumber" type="number" formControlName="phoneNumber" placeholder="9876543210"
-                                pInputText />
+                            <input id="phoneNumber" type="number" formControlName="phoneNumber" placeholder="9876543210" pInputText />
                         </div>
                         <div class="p-field input-box">
                             <label for="pincode">pincode</label>
-                            <input id="pincode" type="number" formControlName="pincode" placeholder="9876543210"
-                                pInputText />
+                            <input id="pincode" type="number" formControlName="pincode" placeholder="9876543210" pInputText />
                         </div>
 
                     </div>
-                </form>
+                   
+               
             </div>
-        </div>  
-        <div class="button">
-            <p-button type="submit" label="Save" styleClass="p-button"></p-button>
+            <div class="button">
+                <p-button type="submit" label="Save" styleClass="p-button"></p-button>
+            </div>
+        </form>
         </div>
+
 
     </div>
 </div>

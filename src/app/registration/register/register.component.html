@@ -20,13 +20,11 @@
                     </div>
                     <div class="p-field input-box">
                         <label for="lastName">Last Name</label>
-                        <input id="lastName" type="text" formControlName="lastName" class="p-invalid"
-                            placeholder="marshall" pInputText />
+                        <input id="lastName" type="text" formControlName="lastName" class="p-invalid" placeholder="marshall" pInputText />
                     </div>
                     <div class="p-field input-box">
                         <label for="phoneNumber">Phone Number</label>
-                        <input id="phoneNumber" type="number" formControlName="phoneNumber" placeholder="9876543210"
-                            pInputText />
+                        <input id="phoneNumber" type="number" formControlName="phoneNumber" placeholder="9876543210" pInputText />
                     </div>
                     <div class="p-field input-box">
                         <label for="emailAddress">Email Address</label>
@@ -65,8 +63,7 @@
                     <p-radioButton formControlName="privacypolicy" value="true" id="radio"></p-radioButton>
                     <label for="btn">I agree to Terms & Privacy Policy</label>
                     <div>
-                        <small id="radio" class="p-invalid text-danger"
-                            *ngIf="this.registerForm.controls['privacypolicy'].invalid">Please
+                        <small id="radio" class="p-invalid text-danger" *ngIf="this.registerForm.controls['privacypolicy'].invalid">Please
                             agree
                             Terms & Privacy Policy</small>
                     </div>
