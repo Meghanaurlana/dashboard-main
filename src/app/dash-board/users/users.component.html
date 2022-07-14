@@ -25,11 +25,9 @@
                         <th>
                             <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
                         </th>
-                        <th>Name</th>
-                        <th>Email Address</th>
-                        <th>Phone Number</th>
-                        <th>Date Created</th>
-                        <th>Pincode Address</th>
+
+                        <th *ngFor="let column of list"> {{column}}</th>
+
                     </tr>
                 </ng-template>
 

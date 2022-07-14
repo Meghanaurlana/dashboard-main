@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { MessageService } from 'primeng/api';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -10,7 +11,7 @@ import { MessageService } from 'primeng/api';
 export class RegisterComponent implements OnInit {
   registerForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private messageService: MessageService) {
+  constructor(private fb: FormBuilder, private messageService: MessageService, private router:Router) {
     this.registerForm = fb.group({});
   }
 
@@ -55,6 +56,7 @@ export class RegisterComponent implements OnInit {
       return this.messageService.add({ severity: 'error', summary: 'please agree to terms and conditions', detail: 'please agree to terms and conditions' });
     } console.log(this.registerForm.value);
     return this.messageService.add({ severity: 'success', summary: 'Success', detail: 'registered' });
+   
 
   }
 }
