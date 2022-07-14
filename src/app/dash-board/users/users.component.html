@@ -17,8 +17,9 @@
             </div>
         </div>
         <div class="table">
-            
-            <p-table  [value]="products" [paginator]="true" [rows]="10" [showCurrentPageReport]="true" responsiveLayout="scroll">
+
+            <p-table [value]="products" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
+                responsiveLayout="scroll">
                 <ng-template pTemplate="header">
                     <tr>
                         <th>
@@ -46,13 +47,7 @@
                         <td>{{product.PincodeAddress}}</td>
                     </tr>
                 </ng-template>
-                
-                <!-- <ng-template pTemplate="paginatorleft">
-                    <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
-                </ng-template>
-                <ng-template pTemplate="paginatorright">
-                    <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
-                </ng-template> -->
+
             </p-table>
 
         </div>
