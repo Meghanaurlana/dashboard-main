@@ -43,6 +43,18 @@
                         <td>{{product.PhoneNumber}}</td>
                         <td>{{product.DateCreated}}</td>
                         <td>{{product.PincodeAddress}}</td>
+
+
+                        <td><i class="pi pi-ellipsis-v"    (click)="op.toggle($event)" ></i></td>
+
+
+
+                        <p-overlayPanel #op [showCloseIcon]="true" [style]="{width: '5rem'}">
+                            
+                             <div class="delete"   (click)="remove(0)" >delete</div>
+                        </p-overlayPanel>
+                        
+
                     </tr>
                 </ng-template>
 

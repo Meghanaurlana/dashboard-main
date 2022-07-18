@@ -30,7 +30,7 @@ export class DashboardComponent implements OnInit {
         },
       ],
     };
-    this.products = tableData.slice(0, 5);
+    this.products = tableData.slice(0, 3);
   }
 
   oncardclick(i: number) {
@@ -52,7 +52,7 @@ export class DashboardComponent implements OnInit {
     if (!this.seeMore) {
       this.products = tableData.slice(0, 12);
     } else {
-      this.products = tableData.slice(0, 5);
+      this.products = tableData.slice(0, 3);
 
     }
   }

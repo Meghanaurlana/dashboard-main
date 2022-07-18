@@ -7,14 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
   products: Product[] = [];
+
 list=["Name", "EmailAddress","PhoneNumber","DateCreated","PincodeAddress"];
   constructor() { }
 
   ngOnInit(): void {
     this.products = tableData;
-  
+
+
+
+    }
+
+    remove(x:number){
+    
+      this.products.splice(x, 1);
   }
-}
+  }
+
 
 export interface Product {
 

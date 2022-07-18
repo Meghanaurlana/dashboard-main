@@ -34,14 +34,18 @@ export class ProfileComponent implements OnInit {
 
   onsubmit(): void {
  
-    this.profileForm.markAllAsTouched();
+     this.profileForm.markAllAsTouched();
+     if(this.profileForm.valid){
+       console.log(this.profileForm.value);
+       
+     }
 
-    if (this.profileForm.invalid || this.profileForm.controls['password'].value != this.profileForm.controls['confirmPassword'].value) {
-      return this.messageService.add({ severity: 'error', summary: 'please fill required fields', detail: 'please fill required fields' });
-    } else if (!this.profileForm.controls['privacypolicy'].value) {
-      return this.messageService.add({ severity: 'error', summary: 'please agree to terms and conditions', detail: 'please agree to terms and conditions' });
-    } console.log(this.profileForm.value);
-    return this.messageService.add({ severity: 'success', summary: 'Success', detail: 'registered' });
+    //  if (this.profileForm.invalid || this.profileForm.controls['password'].value != this.profileForm.controls['confirmPassword'].value) {
+    //   //  return this.messageService.add({ severity: 'error', summary: 'please fill required fields', detail: 'please fill required fields' });
+    //  } else if (!this.profileForm.controls['privacypolicy'].value) {
+    //   //  return this.messageService.add({ severity: 'error', summary: 'please agree to terms and conditions', detail: 'please agree to terms and conditions' });
+    //  } console.log(this.profileForm.value);
+    // //  return this.messageService.add({ severity: 'success', summary: 'Success', detail: 'registered' });
 
   }
 }
