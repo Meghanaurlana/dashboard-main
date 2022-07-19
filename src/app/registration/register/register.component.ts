@@ -52,10 +52,12 @@ export class RegisterComponent implements OnInit {
 
     if (this.registerForm.invalid || this.registerForm.controls['password'].value != this.registerForm.controls['confirmPassword'].value) {
       return this.messageService.add({ severity: 'error', summary: 'please fill required fields', detail: 'please fill required fields' });
+      
     } else if (!this.registerForm.controls['privacypolicy'].value) {
       return this.messageService.add({ severity: 'error', summary: 'please agree to terms and conditions', detail: 'please agree to terms and conditions' });
     } console.log(this.registerForm.value);
-    return this.messageService.add({ severity: 'success', summary: 'Success', detail: 'registered' });
+     this.messageService.add({ severity: 'success', summary: 'Success', detail: 'registered' });
+    this.router.navigateByUrl('/login');
    
 
   }
