@@ -20,25 +20,25 @@ export class ProfileComponent implements OnInit {
         Validators.required,
         Validators.minLength(3)
       ]),
-      lastName: new FormControl(''),
+      lastName: new FormControl(),
 
-      phoneNumber: new FormControl(''),
+      phoneNumber: new FormControl(),
       emailAddress: new FormControl('', [
         Validators.required,
         Validators.email,
       ]),
-      pincode: new FormControl(''),
+      pincode: new FormControl(),
     }
     )
   }
 
   onsubmit(): void {
- 
-     this.profileForm.markAllAsTouched();
-     if(this.profileForm.valid){
-       console.log(this.profileForm.value);
-       
-     }
+
+    this.profileForm.markAllAsTouched();
+    if (this.profileForm.valid) {
+      console.log(this.profileForm.value);
+
+    }
 
     //  if (this.profileForm.invalid || this.profileForm.controls['password'].value != this.profileForm.controls['confirmPassword'].value) {
     //   //  return this.messageService.add({ severity: 'error', summary: 'please fill required fields', detail: 'please fill required fields' });

@@ -31,7 +31,7 @@
                     </tr>
                 </ng-template>
 
-                <ng-template pTemplate="body" let-user let-columns="users">
+                <ng-template pTemplate="body" let-user let-columns="users"  let-rowIndex="rowIndex">
                     <tr>
                         <td>
                             <p-tableCheckbox [value]="user"></p-tableCheckbox>
@@ -42,8 +42,8 @@
 
                         <td><i class="pi pi-ellipsis-v" (click)="op.toggle($event)"></i></td>
 
-                        <p-overlayPanel #op [showCloseIcon]="true" [style]="{width: '5rem'}">
-                            <div class="delete" (click)="remove(0)">delete</div>
+                        <p-overlayPanel #op  [style]="{width: '5rem'}">
+                            <div class="delete" (click)="remove(rowIndex)">delete</div>
                         </p-overlayPanel>
                     </tr>
                 </ng-template>

@@ -5,10 +5,11 @@ import { HttpClient } from '@angular/common/http'
   providedIn: 'root'
 })
 export class DashBoardService {
-  url = "https://jsonplaceholder.typicode.com/users/"
+
   constructor(private http: HttpClient) { }
+
   getdata() {
-    
-    return this.http.get(this.url);
+    let url = "https://jsonplaceholder.typicode.com/users/";
+    return this.http.get(url);
   }
 }
