@@ -11,7 +11,7 @@
 
                 <p-divider layout="vertical">
                 </p-divider>
-                <div class="imageicon"> <a routerLink="/dash-board/profile"> <img src="/assets/images/imageicon.jpg">
+                <div class="imageicon"> <a routerLink="/dash-board/profile"> <img src="/assets/images/avatarpic.jpg">
                     </a></div>
             </div>
         </div>
@@ -31,7 +31,7 @@
                     </tr>
                 </ng-template>
 
-                <ng-template pTemplate="body" let-user let-columns="users">
+                <ng-template pTemplate="body" let-user let-columns="users"  let-rowIndex="rowIndex">
                     <tr>
                         <td>
                             <p-tableCheckbox [value]="user"></p-tableCheckbox>
@@ -43,7 +43,11 @@
                         <td><i class="pi pi-ellipsis-v" (click)="op.toggle($event)"></i></td>
 
                         <p-overlayPanel #op  [style]="{width: '5rem'}">
+<<<<<<< HEAD
                             <div class="delete" (click)="remove(0)">delete</div>
+=======
+                            <div class="delete" (click)="remove(rowIndex)">delete</div>
+>>>>>>> 315b6697f59741eaea2b9801f5f063bcc4dd1918
                         </p-overlayPanel>
                     </tr>
                 </ng-template>
