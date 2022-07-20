@@ -1,5 +1,5 @@
 import { Component, OnInit, } from '@angular/core';
-import { DashBoardService } from '../dash-board.service';
+import { DashBoardService } from '../services/dash-board.service';
 
 @Component({
   selector: 'app-users',
@@ -8,17 +8,18 @@ import { DashBoardService } from '../dash-board.service';
 })
 export class UsersComponent implements OnInit{
   user: any;
+  
   constructor(private users: DashBoardService) {
 
   }
   ngOnInit(): void {
     this.users.getdata().subscribe((data) => {
-      this.user = data as []
+      this.user = data 
       // console.log(data);
     })
   }
 
-  remove(x:number){
+  remove(x:any){
     
       this.user.splice(x, 1);
 

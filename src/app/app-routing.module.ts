@@ -1,9 +1,12 @@
+import { Content } from '@angular/compiler/src/render3/r3_ast';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+
 const routes: Routes = [
 
-  { path: "", redirectTo: "dashboard", pathMatch: "full" },
+  { path: "", redirectTo: "user-list", pathMatch: "full" },
+
 
   {
     path: 'registration',

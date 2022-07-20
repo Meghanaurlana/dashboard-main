@@ -17,7 +17,7 @@
         </div>
         <div class="table">
 
-            <p-table [value]="user" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
+            <p-table [value]="user" [paginator]="true" [rows]="10" [showCurrentPageReport]="false"
                 responsiveLayout="scroll">
                 <ng-template pTemplate="header">
                     <tr>
@@ -43,11 +43,9 @@
                         <td><i class="pi pi-ellipsis-v" (click)="op.toggle($event)"></i></td>
 
                         <p-overlayPanel #op  [style]="{width: '5rem'}">
-<<<<<<< HEAD
-                            <div class="delete" (click)="remove(0)">delete</div>
-=======
+
                             <div class="delete" (click)="remove(rowIndex)">delete</div>
->>>>>>> 315b6697f59741eaea2b9801f5f063bcc4dd1918
+
                         </p-overlayPanel>
                     </tr>
                 </ng-template>
