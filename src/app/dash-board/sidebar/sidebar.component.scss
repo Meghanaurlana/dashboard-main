@@ -27,11 +27,7 @@
   color: #000000;
 }
 
-.dashboard,
-.users,
-.profile,
-.settings,
-.logout {
+.dashboard {
   font-family: Roboto;
   font-size: 1.1rem;
   font-weight: 400;
@@ -54,26 +50,6 @@
 }
 
 .dashboard:hover {
-  cursor: pointer;
-  background-color: #DAE9FC;
-}
-
-.profile:hover {
-  cursor: pointer;
-  background-color: #DAE9FC;
-}
-
-.users:hover {
-  cursor: pointer;
-  background-color: #DAE9FC;
-}
-
-.settings:hover {
-  cursor: pointer;
-  background-color: #DAE9FC;
-}
-
-.logout:hover {
   cursor: pointer;
   background-color: #DAE9FC;
 }
