@@ -7,11 +7,10 @@ import { DashBoardService } from '../services/dash-board.service';
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent implements OnInit{
-  user: any;
-  
-  constructor(private users: DashBoardService) {
 
-  }
+    constructor(private users: DashBoardService) {}
+
+  user: any;
   ngOnInit(): void {
     this.users.getdata().subscribe((data) => {
       this.user = data 
@@ -20,9 +19,7 @@ export class UsersComponent implements OnInit{
   }
 
   remove(x:any){
-    
-      this.user.splice(x, 1);
-
+        this.user.splice(x, 1);
  }
 
 }

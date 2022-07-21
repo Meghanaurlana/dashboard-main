@@ -9,7 +9,7 @@ export class DashBoardService {
   constructor(private http: HttpClient) { }
 
   getdata() {
-    let url = "https://jsonplaceholder.typicode.com/users/";
-    return this.http.get(url);
+  
+    return this.http.get("https://jsonplaceholder.typicode.com/users/");
   }
 }
