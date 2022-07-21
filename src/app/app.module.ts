@@ -15,13 +15,15 @@ import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { RegistrationModule } from './registration/registration.module';
 import { DashBoardModule } from './dash-board/dash-board.module';
-import{HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+
 
 
 
@@ -42,8 +44,8 @@ import{HttpClientModule} from '@angular/common/http';
     ToastrModule.forRoot(),
     ToastModule,
     RegistrationModule,
-     DashBoardModule,
-     HttpClientModule
+    DashBoardModule,
+    HttpClientModule
 
   ],
 

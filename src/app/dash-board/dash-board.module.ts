@@ -25,7 +25,7 @@ import {AvatarModule} from 'primeng/avatar';
 import {AvatarGroupModule} from 'primeng/avatargroup';
 import { DashBoardRoutingModule } from './dash-board-routing.module';
 import{HttpClientModule} from '@angular/common/http'
-import { UserListComponent } from './user-list/user-list.component';
+
 import {OverlayPanelModule} from 'primeng/overlaypanel';
 
 
@@ -35,7 +35,7 @@ import {OverlayPanelModule} from 'primeng/overlaypanel';
     ProfileComponent,
     UsersComponent,
     SidebarComponent,
-    UserListComponent
+   
   ],
   imports: [
     HttpClientModule,
