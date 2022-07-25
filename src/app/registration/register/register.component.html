@@ -12,10 +12,10 @@
 
                         <label for="firstName">First Name</label>
                         <input id="firstName" type="text" formControlName="firstName" class="p-invalid"
-                            [ngClass]="{'border-danger': this.registerForm.controls['firstName'].touched && this.registerForm.controls['firstName'].invalid}"
+                            [ngClass]="{'border-danger': registerForm.controls['firstName'].touched && registerForm.controls['firstName'].invalid}"
                             placeholder="John" pInputText />
                         <small class="p-invalid text-danger"
-                            *ngIf="this.registerForm.controls['firstName'].touched && this.registerForm.controls['firstName'].invalid">Username
+                            *ngIf="registerForm.controls['firstName'].touched && registerForm.controls['firstName'].invalid">Username
                             is not available.</small>
                     </div>
                     <div class="p-field input-box">
@@ -31,33 +31,33 @@
                     <div class="p-field input-box">
                         <label for="emailAddress">Email Address</label>
                         <input id="emailAddress" type="email" formControlName="emailAddress" class="p-invalid"
-                            [ngClass]="{'border-danger': this.registerForm.controls['emailAddress'].touched && this.registerForm.controls['firstName'].invalid}"
+                            [ngClass]="{'border-danger': registerForm.controls['emailAddress'].touched && registerForm.controls['firstName'].invalid}"
                             placeholder="John.marshall@gmail.com" pInputText />
                         <small class="p-invalid text-danger"
-                            *ngIf=" this.registerForm.controls['emailAddress'].touched &&  this.registerForm.controls['emailAddress'].invalid">Vaild
+                            *ngIf=" registerForm.controls['emailAddress'].touched &&  registerForm.controls['emailAddress'].invalid">Vaild
                             Email Address is
                             required</small>
                     </div>
                     <div class="p-field input-box">
                         <label for="password">Password</label>
                         <input id="password" type="password" autocomplete="on" formControlName="password"
-                            [ngClass]="{'border-danger': this.registerForm.controls['password'].touched && this.registerForm.controls['password'].invalid}"
+                            [ngClass]="{'border-danger': registerForm.controls['password'].touched && registerForm.controls['password'].invalid}"
                             class="p-invalid" placeholder="**********" pInputText />
                         <small class="p-invalid text-danger"
-                            *ngIf="this.registerForm.controls['password'].touched && this.registerForm.controls['password'].invalid">Password
+                            *ngIf="registerForm.controls['password'].touched && registerForm.controls['password'].invalid">Password
                             minimum 8 characters required</small>
                     </div>
                     <div class="p-field input-box">
                         <label for="confirmPassword">Confirm Password</label>
                         <input id="confirmPassword" type="password" autocomplete="on" formControlName="confirmPassword"
-                            [ngClass]="{'border-danger': this.registerForm.controls['confirmPassword'].touched && this.registerForm.controls['confirmPassword'].invalid}"
+                            [ngClass]="{'border-danger': registerForm.controls['confirmPassword'].touched && registerForm.controls['confirmPassword'].invalid}"
                             class="p-invalid" placeholder="**********" pInputText />
                         <small class="p-invalid text-danger"
-                            *ngIf="this.registerForm.controls['confirmPassword'].touched && this.registerForm.controls['confirmPassword'].invalid">Confirm
+                            *ngIf="registerForm.controls['confirmPassword'].touched && registerForm.controls['confirmPassword'].invalid">Confirm
                             Password is
                             required</small>
                         <small class="p-invalid text-danger"
-                            *ngIf="!(this.registerForm.controls['confirmPassword'].value == this.registerForm.controls['password'].value)">Password
+                            *ngIf="!(registerForm.controls['confirmPassword'].value == registerForm.controls['password'].value)">Password
                             mismatch</small>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                     <label class="agree" for="btn">I agree to Terms & Privacy Policy</label>
                     <div>
                         <small id="radio" class="p-invalid text-danger"
-                            *ngIf="this.registerForm.controls['privacypolicy'].invalid">Please
+                            *ngIf="registerForm.controls['privacypolicy'].invalid">Please
                             agree
                             Terms & Privacy Policy</small>
                     </div>

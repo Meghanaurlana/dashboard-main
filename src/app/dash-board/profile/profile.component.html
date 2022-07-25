@@ -19,32 +19,33 @@
 
         <div class="body">
             <form [formGroup]="profileForm" (ngSubmit)="onsubmit()">
-            <div class="editprofile">
-                <span> Edit profile</span>
-            </div>
-            <div class="profileimage">
-                <img src="/assets/images/avatarimg.jpg">
-            </div>
-            <div class="name">
-                <h4>john marshall</h4>
-            </div>
-            <div class="fields">
-               
+                <div class="editprofile">
+                    <span> Edit profile</span>
+                </div>
+                <div class="profileimage">
+                    <img src="/assets/images/avatarimg.jpg">
+                </div>
+                <div class="name">
+                    <h4>john marshall</h4>
+                </div>
+                <div class="fields">
+
                     <div class="fieldname">
                         <div class="p-field input-box">
                             <label for="firstName">First Name</label>
                             <input id="firstName" type="text" formControlName="firstName" class="p-invalid"
-                                [ngClass]="{'border-danger': this.profileForm.controls['firstName'].touched && this.profileForm.controls['firstName'].invalid}"
+                                [ngClass]="{'border-danger': profileForm.controls['firstName'].touched && profileForm.controls['firstName'].invalid}"
                                 placeholder="John" pInputText />
                             <small class="p-invalid text-danger"
-                                *ngIf="this.profileForm.controls['firstName'].touched && this.profileForm.controls['firstName'].invalid">
+                                *ngIf="profileForm.controls['firstName'].touched && profileForm.controls['firstName'].invalid">
                                 Username
                                 is not available.</small>
                         </div>
 
                         <div class="p-field input-box">
                             <label for="lastName">Last Name</label>
-                            <input id="lastName" type="text" formControlName="lastName" class="p-invalid" placeholder="marshall" pInputText />
+                            <input id="lastName" type="text" formControlName="lastName" class="p-invalid"
+                                placeholder="marshall" pInputText />
                         </div>
 
                     </div>
@@ -52,10 +53,10 @@
                     <div class="p-field-email">
                         <label for="emailAddress">Email Address</label>
                         <input id="emailAddress" type="email" formControlName="emailAddress" class="p-invalid"
-                            [ngClass]="{'border-danger': this.profileForm.controls['emailAddress'].touched && this.profileForm.controls['firstName'].invalid}"
+                            [ngClass]="{'border-danger': profileForm.controls['emailAddress'].touched && profileForm.controls['firstName'].invalid}"
                             placeholder="John.marshall@gmail.com" pInputText />
                         <span class="p-invalid text-danger"
-                            *ngIf=" this.profileForm.controls['emailAddress'].touched &&  this.profileForm.controls['emailAddress'].invalid">Vaild
+                            *ngIf=" profileForm.controls['emailAddress'].touched &&  profileForm.controls['emailAddress'].invalid">Vaild
                             Email Address is
                             required</span>
                     </div>
@@ -63,20 +64,22 @@
                     <div class="fieldnumber">
                         <div class="p-field input-box">
                             <label for="phoneNumber">Phone Number</label>
-                            <input id="phoneNumber" type="number" formControlName="phoneNumber" placeholder="9876543210" pInputText />
+                            <input id="phoneNumber" type="number" formControlName="phoneNumber" placeholder="9876543210"
+                                pInputText />
                         </div>
                         <div class="p-field input-box">
                             <label for="pincode">pincode</label>
-                            <input id="pincode" type="number" formControlName="pincode" placeholder="9876543210" pInputText />
+                            <input id="pincode" type="number" formControlName="pincode" placeholder="9876543210"
+                                pInputText />
                         </div>
                     </div>
-                   
-               
-            </div>
-            <div class="button">
-                <p-button type="submit" label="Save" styleClass="p-button"></p-button>
-            </div>
-        </form>
+
+
+                </div>
+                <div class="button">
+                    <p-button type="submit" label="Save" styleClass="p-button"></p-button>
+                </div>
+            </form>
         </div>
 
 
