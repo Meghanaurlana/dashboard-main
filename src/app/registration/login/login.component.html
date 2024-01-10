@@ -1,62 +1,87 @@
 <div class="login-page">
-    <div class="login">
-        <div class="login-title">Imaginnovate</div>
-        <div class="login-des">Login to your account</div>
-        <div class="content">
-            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-                <div class="user-details">
-                    <div class="input-field">
+  <div class="login">
+    <!-- <div class="login-title"></div> -->
+    <div class="login-des">Login to your account</div>
+    <div class="content">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="user-details">
+          <div class="input-field">
+            <div class="p-field">
+              <label for="emailAddress">Email Address</label>
+              <input
+                id="emailAddress"
+                type="email"
+                formControlName="emailAddress"
+                [ngClass]="{
+                  'border-danger':
+                    loginForm.controls['emailAddress'].touched &&
+                    loginForm.controls['emailAddress'].invalid
+                }"
+                class="p-invalid"
+                placeholder="John.marshall@gmail.com"
+                pInputText
+              />
+              <small
+                class="p-invalid text-danger"
+                *ngIf="
+                  loginForm.controls['emailAddress'].touched &&
+                  loginForm.controls['emailAddress'].invalid
+                "
+                >Valid Email Address is required</small
+              >
+            </div>
 
-                        <div class="p-field">
-                            <label for="emailAddress">Email Address</label>
-                            <input id="emailAddress" type="email" formControlName="emailAddress"
-                                [ngClass]="{'border-danger': loginForm.controls['emailAddress'].touched && loginForm.controls['emailAddress'].invalid}"
-                                class="p-invalid" placeholder="John.marshall@gmail.com" pInputText />
-                            <small class="p-invalid text-danger "
-                                *ngIf="loginForm.controls['emailAddress'].touched && loginForm.controls['emailAddress'].invalid">Valid
-                                Email
-                                Address is
-                                required</small>
-                        </div>
+            <div class="p-field">
+              <label for="password">Password</label>
+              <input
+                id="current-password"
+                type="password"
+                autocomplete="on"
+                formControlName="password"
+                [ngClass]="{
+                  'border-danger':
+                    loginForm.controls['password'].touched &&
+                    loginForm.controls['password'].invalid
+                }"
+                class="p-invalid"
+                placeholder="**********"
+                pInputText
+              />
+              <small
+                class="p-invalid text-danger"
+                *ngIf="
+                  loginForm.controls['password'].touched &&
+                  loginForm.controls['password'].invalid
+                "
+                >Password minimum 8 characters required</small
+              >
+            </div>
+          </div>
+          <div class="login-class">
+            <div class="field-radiobutton">
+              <p-radioButton
+                formControlName="remeberme"
+                value="true"
+              ></p-radioButton>
+              <label for="city">Remember me</label>
+            </div>
 
-                        <div class="p-field">
-                            <label for="password">Password</label>
-                            <input id="current-password" type="password" autocomplete="on" formControlName="password"
-                                [ngClass]="{'border-danger': loginForm.controls['password'].touched && loginForm.controls['password'].invalid}"
-                                class="p-invalid" placeholder="**********" pInputText />
-                            <small class="p-invalid text-danger"
-                                *ngIf="loginForm.controls['password'].touched && loginForm.controls['password'].invalid">Password
-                                minimum 8 characters
-                                required</small>
-                        </div>
-
-                    </div>
-                    <div class="login-class">
-
-                        <div class="field-radiobutton">
-                            <p-radioButton formControlName="remeberme" value="true"></p-radioButton>
-                            <label for="city">Remember me</label>
-                        </div>
-
-                        <div class="forget-password">
-                            <span class="login-forget-password">Forget Password?</span>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="button">
-
-                    <p-toast></p-toast>
-
-                    <p-button type="submit" label="Login now" styleClass="p-button">
-                    </p-button>
-                </div>
-
-                <div class="account">
-                    <a routerLink="/register"> Dont have an account? Join free today</a>
-                </div>
-
-            </form>
+            <div class="forget-password">
+              <span class="login-forget-password">Forget Password?</span>
+            </div>
+          </div>
         </div>
+        <div class="button">
+          <p-toast></p-toast>
+
+          <p-button type="submit" label="Login now" styleClass="p-button">
+          </p-button>
+        </div>
+
+        <div class="account">
+          <a routerLink="/register"> Dont have an account? Join free today</a>
+        </div>
+      </form>
     </div>
+  </div>
 </div>

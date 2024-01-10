@@ -1,5 +1,6 @@
 .main {
     display: flex;
+    width:fit-content
 }
 
 .sidebar {
@@ -134,7 +135,6 @@ justify-content: space-evenly;
     left: 0rem;
     top: .6rem;
     border-radius: 0px;
-    margin-left: 5.2rem;
 }
 
 :host ::ng-deep .p-avatar{

@@ -21,13 +21,12 @@ import { TableModule } from 'primeng/table';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CalendarModule } from 'primeng/calendar';
 import { DividerModule } from 'primeng/divider';
-import {AvatarModule} from 'primeng/avatar';
-import {AvatarGroupModule} from 'primeng/avatargroup';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
 import { DashBoardRoutingModule } from './dash-board-routing.module';
-import{HttpClientModule} from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 
-import {OverlayPanelModule} from 'primeng/overlaypanel';
-
+import { OverlayPanelModule } from 'primeng/overlaypanel';
 
 @NgModule({
   declarations: [
@@ -35,7 +34,6 @@ import {OverlayPanelModule} from 'primeng/overlaypanel';
     ProfileComponent,
     UsersComponent,
     SidebarComponent,
-   
   ],
   imports: [
     HttpClientModule,
@@ -61,7 +59,6 @@ import {OverlayPanelModule} from 'primeng/overlaypanel';
     AvatarModule,
     AvatarGroupModule,
     DashBoardRoutingModule,
-
   ],
   providers: [MessageService],
 })
